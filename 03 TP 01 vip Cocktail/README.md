@@ -41,16 +41,17 @@ USE invitation;
 -- mettre un nom a la contrainte de clef primaire
 -- CONSTRAINT pk_personne
 -- ALT + SHIFT + fleche : dupliquer la ligne
+DROP TABLE IF EXISTS inv_personne;
 CREATE TABLE inv_personne(
-    id int NOT NULL AUTO_INCREMENT, 
-    prenom VARCHAR(100) NOT NULL DEFAULT 'toto',
-    nom VARCHAR(100) NOT NULL,
-    age TINYINT(1) NOT NULL,
-    inscription DATE NOT NULL,
-    statut TINYINT(1) NOT NULL DEFAULT 1, -- 1 ok 0 pas ok
-    type ENUM('membre','NON MEMBRE') NOT NULL DEFAULT 'NON MEMBRE',
-    description TEXT, -- peut etre null
-    salaire INT,
-    CONSTRAINT pk_personne PRIMARY KEY(id)
+    pers_id int NOT NULL AUTO_INCREMENT, 
+    pers_prenom VARCHAR(100) NOT NULL DEFAULT 'toto',
+    pers_nom VARCHAR(100) NOT NULL,
+    pers_age INT NOT NULL,
+    pers_inscription DATE NOT NULL,
+    pers_statut TINYINT(1) NOT NULL DEFAULT 1, -- 1 ok 0 pas ok
+    pers_type ENUM('membre','NON MEMBRE') NOT NULL DEFAULT 'NON MEMBRE',
+    pers_description TEXT, -- peut etre null
+    pers_salaire INT,
+    CONSTRAINT pk_personne PRIMARY KEY(pers_id) # pk_personne le nom de la contrainte
 ) ENGINE=InnoDB; 
 ```
