@@ -61,9 +61,13 @@ CREATE TABLE inv_personne(
 
 ## La correction partie 2 :heart_eyes: :
 ```mysql
+-- vider la table de ses données
 TRUNCATE inv_personne;
-INSERT INTO inv_personne (prenom,nom,age,inscription,statut,type,description,salaire) VALUES
-('Brad','PITT',60,'1970-01-01',1,'NON membre','lorem ipsum',2000000),
+-- inserer DATA données
+INSERT INTO inv_personne 
+(pers_prenom,pers_nom,pers_age,pers_inscription,pers_statut,pers_type,pers_description,pers_salaire)  
+VALUES
+('Brad','PITT',	60,	'1970/01/01',1,	'non membre','lorem ipsum', 2000000),
 ('George','Cloney',62,'1999-01-01',1,'membre','juste beau',4000000),
 ('Jean','DUJARDIN',51,'1994-01-01',0,'membre','brice de nice',1000000)
 ;
