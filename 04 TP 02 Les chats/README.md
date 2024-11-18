@@ -17,3 +17,36 @@
 08 - Afficher la moyenne d'age des chats  
 09 - Afficher le nombre de chats dans la table  
 10 - Ajouter les données à partir d'un fichier excel  
+
+# Correction structure de la table
+
+```mysql
+-- CREATION DATA BASE
+CREATE DATABASE IF NOT EXISTS zoo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE zoo;
+
+-- SUPPRIMER LA TABLE
+DROP TABLE IF EXISTS chat;
+
+CREATE TABLE IF NOT EXISTS chat(
+ id INT NOT NULL AUTO_INCREMENT,
+ nom VARCHAR(50) NOT NULL,
+ yeux VARCHAR(20) NOT NULL,
+ age INT NOT NULL,
+ CONSTRAINT pk_chat PRIMARY KEY (id)
+)ENGINE=INNODB;
+
+-- INSERTION DES DONNES
+TRUNCATE chat;
+
+INSERT INTO chat (nom,yeux,age)
+VALUES
+('maine coon','marron',20),
+('siamois','bleu',15),
+('bengal','marron',18),
+('scottish Fold','marron',10);
+
+-- affiche 
+SELECT * from chat;
+```
