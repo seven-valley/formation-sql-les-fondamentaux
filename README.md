@@ -1,4 +1,4 @@
-# Les fondamentaux SQl
+# Les fondamentaux SQL
 
 # Plan de la formation
 
