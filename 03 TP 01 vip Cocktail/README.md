@@ -57,3 +57,27 @@ CREATE TABLE inv_personne(
 ) ENGINE=InnoDB; 
  
 ```
+
+
+## La correction partie 2 :heart_eyes: :
+```mysql
+TRUNCATE inv_personne;
+INSERT INTO inv_personne (prenom,nom,age,inscription,statut,type,description,salaire) VALUES
+('Brad','PITT',60,'1970-01-01',1,'NON membre','lorem ipsum',2000000),
+('George','Cloney',62,'1999-01-01',1,'membre','juste beau',4000000),
+('Jean','DUJARDIN',51,'1994-01-01',0,'membre','brice de nice',1000000)
+;
+```
+
+## Partie 3 Afficher
+
+- Afficher le plus gros chiffre d'affaire (avec MAX)
+- Afficher le plus petit chiffre d'affaire (avec MIN)
+- Afficher le nom de la personne du plus petit CA
+- Afficher le nom de la personne du plus gros CA
+- Afficher le salaire moyen
+- Afficher le nombre de personnes
+- Proposer une requete avec BETWEEN
+- Proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
+- Proposer une requete avec LIKE '%..%'
+- Trier par age les membres
