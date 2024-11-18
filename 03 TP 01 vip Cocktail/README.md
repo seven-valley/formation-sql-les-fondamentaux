@@ -72,7 +72,9 @@ INSERT INTO inv_personne (prenom,nom,age,inscription,statut,type,description,sal
 ## Partie 3 Afficher
 
 - Afficher le plus gros chiffre d'affaire (avec MAX)
+[doc max w3](https://www.w3schools.com/sql/func_mysql_max.asp)  
 - Afficher le plus petit chiffre d'affaire (avec MIN)
+[doc min w3](https://www.w3schools.com/sql/func_mysql_min.asp)    
 - Afficher le nom de la personne du plus petit CA
 - Afficher le nom de la personne du plus gros CA
 - Afficher le salaire moyen
