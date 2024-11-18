@@ -34,10 +34,7 @@ Chaque personne à :
 
 ## La correction partie 1 :heart_eyes: :
 ```mysql
-DROP DATABASE invitation;
-CREATE DATABASE invitation CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE invitation;
 DROP DATABASE invitation;
 CREATE DATABASE invitation CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
