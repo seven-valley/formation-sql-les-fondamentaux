@@ -79,8 +79,8 @@ VALUES
 [doc max w3](https://www.w3schools.com/sql/func_mysql_max.asp)  
 - Afficher le plus petit chiffre d'affaire (avec MIN)
 [doc min w3](https://www.w3schools.com/sql/func_mysql_min.asp)    
-- Afficher le nom de la personne du plus petit CA
-- Afficher le nom de la personne du plus gros CA
+- Afficher le nom de l'acteur (et son salaire) qui a le plus petit salaire
+- Afficher le nom de l'acteur (et son salaire) qui a le plus gros salaire
 - Afficher le salaire moyen
 - Afficher le nombre de personnes
 - Proposer une requete avec BETWEEN
