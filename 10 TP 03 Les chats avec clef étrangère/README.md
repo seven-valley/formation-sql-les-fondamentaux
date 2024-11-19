@@ -14,7 +14,7 @@
 4 - Insérer  les données  
 5 - Afficher les chats avec leur couleur d'yeux  
 6 - Faire le script pour supprimer les table (DROP TABLE)  
-
+![alt text](image.webp)
 ## La structure
 ```sql
 
@@ -49,3 +49,21 @@ INSERT INTO chat (nom,couleur_id) VALUES
 ('Scottish Fold',1);
 ```
 
+# Le prompt de dbDiagram
+  
+https://dbdiagram.io/home  
+  
+```
+Table couleur{
+  id int [pk,not null, increment]
+  nom varchar(30) [not null]
+}
+
+Table chat{
+  id int [pk,not null, increment]
+  nom varchar(30) [not null]
+  couleur_id int [not null]
+}
+
+Ref: "couleur"."id" < "chat"."couleur_id"
+```
