@@ -100,7 +100,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 	('FA006', 'logiciel ERP', 2000, 6, '2023-03-01',null);
 ```
 # Partie 1
-1 - Créer la base de données  en 4 étape
+1 - Créer la base de données  en 4 étape  
   11 - Créer la table client & Ajouter les données de client  
   12 - Créer la table projet & Ajouter les données de projet  
   13 - Créer la table devis & Ajouter les données de devis    
