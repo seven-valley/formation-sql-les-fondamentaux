@@ -50,3 +50,47 @@ VALUES
 -- affiche 
 SELECT * from chat;
 ```
+
+```mysql
+# 04 - Ajouter les données 
+SELECT 
+*
+FROM chat  where id=2;
+```
+
+```mysql
+# 05 - Afficher le chat avec l'id :2 
+SELECT 
+id, nom, yeux, age 
+FROM chat 
+WHERE id=2
+```
+
+```mysql
+# 06 - Afficher les chats qui vive entre 11 et 19 ans 
+SELECT 
+nom, age 
+FROM chat 
+WHERE age >=11
+AND age <=19
+```
+```mysql
+# 07 - Afficher le ou les chats dont le nom contient 'sia'  
+SELECT 
+id, nom, yeux, age 
+FROM chat 
+WHERE nom LIKE 'sia%'
+```
+```mysql
+# 08 - Afficher la moyenne d'age des chats  
+SELECT 
+AVG(age)
+FROM chat 
+```
+```mysql
+# 09 - Afficher le nombre de chats dans la table 
+SELECT 
+COUNT(id) AS nb_chat
+FROM chat  
+```
+

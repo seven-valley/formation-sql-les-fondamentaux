@@ -87,3 +87,89 @@ VALUES
 - Proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
 - Proposer une requete avec LIKE '%..%'
 - Trier par age les membres
+
+
+```mysql
+-- Afficher le plus gros chiffre d'affaire (avec MAX)
+SELECT 
+MAX(salaire) AS plus_gros_ca 
+FROM inv_personne;
+```
+
+```mysql
+-- Afficher le plus petit chiffre d'affaire (avec MIN)
+SELECT 
+MIN(salaire) AS plus_gros_ca 
+FROM inv_personne;
+```
+```mysql
+-- Afficher le nom de la personne du plus petit CA
+SELECT 
+salaire,prenom,nom
+FROM inv_personne 
+ORDER BY salaire ASC
+LIMIT 1;
+```
+
+```mysql
+-- Afficher le nom de la personne du plus gros CA
+SELECT 
+salaire,prenom,nom
+FROM inv_personne 
+ORDER BY salaire DESC
+LIMIT 1;
+```
+
+```mysql
+-- Afficher le salaire moyen
+SELECT AVG(salaire) AS salaire_moyen from inv_personne
+```
+
+```mysql
+-- Afficher le nombre de personnes
+
+SELECT COUNT(id) FROM inv_personne;
+
+-- GROUP BY utilisé souvent avec COUNT
+```
+
+```mysql
+-- Proposer une requete avec BETWEEN
+
+SELECT
+prenom,nom
+FROM inv_personne
+WHERE salaire BETWEEN 1000000 AND 40000000; 
+
+```
+
+alternative :
+```mysql  
+SELECT
+prenom,nom
+FROM inv_personne
+WHERE salaire > 1000000
+AND salaire < 4000000;
+```
+
+
+```mysql
+-- Proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
+Select UCASE(prenom) FROM personne
+```
+
+
+```mysql
+-- Proposer une requete avec LIKE '%..%'
+SELECT nom, prenom FROM personne
+WHERE prenom LIKE 'b%'
+```
+
+
+```mysql
+SELECT 
+prenom,nom
+FROM inv_personne
+WHERE type='membre'
+ORDER BY age,nom,prenom;
+```
