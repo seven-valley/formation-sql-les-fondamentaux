@@ -25,10 +25,9 @@ Nous lui envoyons une facture
 # les data
 
 ```sql
-TRUNCATE client;
-TRUNCATE projet;
-TRUNCATE devis;
-TRUNCATE facture;
+DROP DATABASE IF EXISTS my_crm;
+CREATE DATABASE my_crm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+use my_crm;
 
 INSERT INTO client (nom) VALUES 
 	('Mairie de Rennes'),
