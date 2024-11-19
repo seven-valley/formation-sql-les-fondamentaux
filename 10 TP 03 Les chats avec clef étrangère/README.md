@@ -75,6 +75,6 @@ chat.nom as chat,
 couleur.nom as couleur
 FROM chat
 INNER JOIN couleur 
-ON couleur.id = chat.couleur_id
+ON chat.couleur_id = couleur.id
 # la_table.le_champ
 ```
