@@ -19,7 +19,9 @@ Nous lui envoyons une facture
 ![client](../img/11/client.png)
 ## Les factures
 ![facture](../img/11/facture.png)
-
+  
+**attention les dates des factures ont été modifiées !** 
+   
 # les data
 ```sql
 DELETE FROM client;
