@@ -101,11 +101,11 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 ```
 # Partie 1
 1 - Créer la base de données  en 4 étape
-  11 - Créer la table client & Ajouter les données de client
-  12 - Créer la table projet & Ajouter les données de projet
-  13 - Créer la table devis & Ajouter les données de devis
-  14 - Créer la table facture & Ajouter les données de facture
-
+  11 - Créer la table client & Ajouter les données de client  
+  12 - Créer la table projet & Ajouter les données de projet  
+  13 - Créer la table devis & Ajouter les données de devis    
+  14 - Créer la table facture & Ajouter les données de facture  
+  
 2 - Ajouter les données  
   
 # Partie 2
