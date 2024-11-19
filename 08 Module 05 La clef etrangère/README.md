@@ -69,25 +69,10 @@ CREATE TABLE fruit (
 )ENGINE=InnoDB;
 
 -- ajout de la contrainte de clef etrangere foreign key
-ALTER TABLE fruit ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES couleur (id);
+ALTER TABLE fruit ADD CONSTRAINT fk_couleur FOREIGN KEY fruit(couleur_id) REFERENCES couleur (id);
 ```
 
 
-
-```mysql
-CREATE TABLE `fruit` (
-  `id` INT PRIMARY KEY NOT NULL,
-  `nom` VARCHAR(30) NOT NULL,
-  `couleur_id` INT NOT NULL
-)ENGINE=InnoDB;
-
-CREATE TABLE `couleur` (
-  `id` INT PRIMARY KEY NOT NULL,
-  `nom` VARCHAR(30) NOT NULL
-)ENGINE=InnoDB;
-
-ALTER TABLE `fruit` ADD FOREIGN KEY (`couleur_id`) REFERENCES `couleur` (`id`);
-```
 
 # Ajouter les données
 ```mysql
