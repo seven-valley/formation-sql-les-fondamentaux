@@ -87,3 +87,43 @@ avec le nombre de jours de retard
 https://dbdiagram.io/
 
 
+# Partie 1 : Etape 11 & 12
+```sql
+DROP DATABASE IF EXISTS my_crm;
+CREATE DATABASE my_crm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+use my_crm;
+
+
+CREATE TABLE client (
+ id INT NOT NULL AUTO_INCREMENT,
+ nom VARCHAR(255) NOT NULL,
+ CONSTRAINT pk_client PRIMARY KEY (id)
+)ENGINE=INNODB;
+
+CREATE TABLE projet(
+ id INT NOT NULL AUTO_INCREMENT,
+ client_id INT NOT NULL,
+ nom VARCHAR(255) NOT NULL,
+ CONSTRAINT pk_projet PRIMARY KEY (id)
+)ENGINE=INNODB;
+
+ALTER TABLE projet 
+ADD CONSTRAINT fk_client 
+FOREIGN KEY projet(client_id) 
+REFERENCES client(id);
+
+-- LES DATA
+INSERT INTO client (nom) VALUES 
+	('Mairie de Rennes'),
+	('Neo Soft'),
+	('Sopra'),
+	('Accenture'),
+	('Amazon');
+INSERT INTO projet (nom, client_id) VALUES
+	('Création de site internet', 1),
+	('Logiciel CRM', 2),
+	('Logiciel de devis', 3),
+	('Site internet e-commerce', 4),
+	('Logiciel ERP', 2),
+	('Logiciel gestion de stock',5);
+```

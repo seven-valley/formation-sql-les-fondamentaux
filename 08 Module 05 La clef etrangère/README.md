@@ -73,12 +73,12 @@ ALTER TABLE fruit ADD CONSTRAINT fk_couleur FOREIGN KEY fruit(couleur_id) REFERE
 ```
 # Détail de la creation de la contrainte d'intégrité avec ALTER TABLE
 ```mysql
-# ALTER TABLE "la table qui contient la clef etranger" 
-# ADD CONSTRAINT "le nom de l'etiquette de la clef etrange" 
+# ALTER TABLE "la table qui contient la clef etrangere" 
+# ADD CONSTRAINT "le nom de l'etiquette de la clef etrangere" 
 # FOREIGN KEY "la table qui contient la clef etrangere(le champ de la clef etranger)" 
 # REFERENCES "la table qui contient la clef primaire(le champ de la clef primaire)
 ALTER TABLE fruit 
-ADD CONSTRAINT fk_fruit 
+ADD CONSTRAINT fk_couleur 
 FOREIGN KEY fruit(couleur_id)
 REFERENCES couleur(id)
 ```
