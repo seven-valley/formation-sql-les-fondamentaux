@@ -16,7 +16,7 @@
 07 - Afficher le ou les chats dont le nom contient 'sia'  
 08 - Afficher la moyenne d'age des chats  
 09 - Afficher le nombre de chats dans la table  
-10 - Ajouter les données à partir d'un fichier excel  
+[BONUS] 10 - Ajouter les données à partir d'un fichier excel  
 
 # Correction structure de la table
 
