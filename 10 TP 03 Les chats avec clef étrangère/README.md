@@ -67,3 +67,14 @@ Table chat{
 
 Ref: "couleur"."id" < "chat"."couleur_id"
 ```
+
+# AFFICHER 
+```mysql
+SELECT 
+chat.nom as chat,
+couleur.nom as couleur
+FROM chat
+INNER JOIN couleur 
+ON couleur.id = chat.couleur_id
+# la_table.le_champ
+```
