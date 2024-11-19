@@ -16,7 +16,7 @@ INNER JOIN couleur on fruit.couleur_id = couleur.id;
 ```
 
 ```mysql
-SELECT fruit.nom,couleur.nom A
+SELECT fruit.nom,couleur.nom 
 FROM fruit
 INNER JOIN couleur on fruit.couleur_id = couleur.id;
 
