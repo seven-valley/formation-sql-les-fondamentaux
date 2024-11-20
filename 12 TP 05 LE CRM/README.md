@@ -80,9 +80,11 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 ![alt text](image-3.png)  
 4 - afficher le CA total  
 ![alt text](image-4.png)  
-5 - afficher  la somme des factures en attente de paiement  
+5 - afficher  la somme des factures en attente de paiement 
+![alt text](image-5.png)   
 6 - afficher les factures en retard de paiment 30 jours max  
-avec le nombre de jours de retard  
+avec le nombre de jours de retard
+![alt text](image-6.png)    
 
 # Partie 3 réaliser un modèle relationnel
   **[OPTIONEL]**  
@@ -301,18 +303,23 @@ LEFT JOIN facture ON facture.devis_id = devis.id
 GROUP BY (client.id);
 ```
 4 - afficher le CA total
+![alt text](image-4.png) 
 ```mysql
 SELECT SUM(total) FROM facture;
 ```
 5 - afficher  la somme des factures en attente de paiement
+![alt text  ](image-5.png)
 ```mysql
 SELECT SUM(total) FROM facture WHERE date_paiement IS NULL;
 ```
 6 - afficher les factures en retard de paiment 30 jours max
 avec le nombre de jours de retard
+![alt text](image-6.png)  
 ```mysql
 SELECT reference,DATEDIFF(CURDATE(),date_crea) AS nb_jours
 FROM facture 
 WHERE date_paiement IS NULL
 AND DATEDIFF(CURDATE(),date_crea)  > 30;
 ```
+
+7 - ajouter 1 euros par jours de retard
