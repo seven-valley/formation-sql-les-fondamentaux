@@ -76,14 +76,14 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 ## 2 - Afficher le nombre de factures par client 
  - afficher 0 factures si il n'y a pas de factures  
  ![alt text](image.png)    
-## 3 - afficher le chiffre d'affaire par client   
+## 3 - Afficher le chiffre d'affaire par client   
 ![alt text](image-3.png)  
-## 4 - afficher le CA total  
+## 4 - Afficher le CA total  
 ![alt text](image-4.png)  
-## 5 - afficher  la somme des factures en attente de paiement 
+## 5 - Afficher  la somme des factures en attente de paiement 
 ![alt text](image-5.png)   
-## 6 - afficher les factures en retard de paiment 30 jours max  
-avec le nombre de jours de retard
+## 6 - Afficher les factures en retard de paiment 30 jours max  
+avec le nombre de jours de retard  
 ![alt text](image-6.png)    
 
 # Partie 3 réaliser un modèle relationnel
