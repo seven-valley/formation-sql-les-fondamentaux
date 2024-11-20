@@ -312,6 +312,21 @@ SELECT SUM(total) FROM facture;
 ```mysql
 SELECT SUM(total) FROM facture WHERE date_paiement IS NULL;
 ```
+- autre possibilité avec le nom client
+```sql
+-- 5 - afficher la somme des factures en attente de paiement
+SELECT 
+client.nom,
+facture.reference,
+facture.info,
+facture.total,
+facture.date_crea
+FROM facture
+INNER JOIN devis ON facture.devis_id =devis.id
+INNER JOIN projet ON devis.projet_id = projet.id
+INNER JOIN client ON projet.client_id =client.id
+WHERE facture.date_paiement IS NULL;
+```
 6 - afficher les factures en retard de paiment 30 jours max
 avec le nombre de jours de retard
 ![alt text](image-6.png)  
