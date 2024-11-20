@@ -73,7 +73,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 # Partie 2
 ## 1 - Afficher toutes les factures avec le nom des clients
 ![alt text](image-1.png) 
-| prenom | nom | age | inscription | statut | type |
+| prenom | nom | age | inscription | statut | type |  
 |-|-|-|-|-|-|-|-|
 | Brad | PITT | 60 | 01/01/1970 | 1 | non membre |   
  
