@@ -61,7 +61,7 @@ INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
 ## Reprendre la base du module 06
 
 1 - Afficher tous les films de Léonardo DI CAPRIO  
-2 - Afficher le nombre de films par acteur
+2 - Afficher le nombre de films par acteur  
 3 - Ajouter un film    
 4 - Trouver le film qui n'a pas d'acteur
 
