@@ -219,6 +219,8 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 ```
 
 # Partie 2 - question 1
+1 - Afficher toutes les factures avec le nom des clients  
+ 
 ```sql
 
 SELECT 
@@ -233,4 +235,51 @@ FROM facture
 INNER JOIN devis ON facture.devis_id =devis.id
 INNER JOIN projet ON devis.projet_id = projet.id
 INNER JOIN client ON projet.client_id =client.id
+```
+-  autre possiblilé
+```sql
+USE my_crm;
+SELECT 
+client.nom,
+facture.reference,
+facture.info,
+facture.total,
+facture.date_crea, 
+facture.date_paiement
+
+-- amazon 0
+FROM client  
+INNER JOIN projet ON client.id = projet.client_id
+INNER JOIN devis ON projet.id =devis.projet_id
+INNER JOIN facture ON devis.id =facture.devis_id;
+```
+
+# Partie 2 - question 1
+2 - Afficher le nombre de factures par client  
+- afficher 0 factures si il n'y a pas de factures 
+```sql
+USE my_crm;
+SELECT 
+client.nom,
+COUNT(facture.id)
+
+-- amazon 0
+FROM client  
+LEFT JOIN projet ON client.id = projet.client_id
+LEFT JOIN devis ON projet.id =devis.projet_id
+LEFT JOIN facture ON devis.id =facture.devis_id
+GROUP BY(client.nom)
+```
+- autre possibilité avec RIGHT join
+```sql
+SELECT 
+client.nom,
+count(facture.id)
+
+
+FROM facture 
+RIGHT JOIN devis ON facture.devis_id =devis.id
+RIGHT JOIN projet ON devis.projet_id = projet.id
+RIGHT JOIN client ON projet.client_id =client.id
+GROUP BY(client.id)
 ```
