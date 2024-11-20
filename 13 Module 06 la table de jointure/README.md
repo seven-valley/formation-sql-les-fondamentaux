@@ -1,6 +1,6 @@
 # La table de jointure
 ![film](../img/13/once.webp)
-![db](../img/13/titanic.webp)
+![db](fight-club.webp)
 ## Le modèle relationnel
 ![db](../img/13/db.webp)
 

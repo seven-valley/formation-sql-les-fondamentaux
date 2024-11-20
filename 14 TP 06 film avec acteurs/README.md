@@ -1,5 +1,5 @@
 # TP 06 Film avec acteurs
-
+![db](../img/13/titanic.webp)
 ## Le modèle relationnel
 ![db](../img/13/db.webp)
 
@@ -62,11 +62,11 @@ INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
 
 1 - Afficher tous les films de Léonardo DI CAPRIO  
 2 - Afficher le nombre de films par acteur  
-3 - Ajouter un film    
+3 - Ajouter un film :TITANIC   
 4 - Trouver le film qui n'a pas d'acteur
 
 
-# 1 Afficher tous les films Léonardo
+# 1 - Afficher tous les films Léonardo
 ```mysql
 SELECT 
 film.nom AS film,
@@ -87,4 +87,18 @@ FROM film
 INNER JOIN film_has_acteur  ON film.id = film_has_acteur.film_id
 INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
 GROUP BY (acteur.id);
+```
+
+# 3 - Ajouter un film TITANIC
+```sql
+INSERT INTO film (nom) VALUES ('TITANIC');
+```
+# 4 - Trouver le film qui n'a pas d'acteur
+```sql
+SELECT 
+film.nom, 
+acteur_id
+FROM film
+LEFT JOIN film_has_acteur on film.id=film_has_acteur.film_id
+WHERE acteur_id IS NULL
 ```

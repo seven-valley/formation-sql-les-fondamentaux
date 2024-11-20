@@ -54,6 +54,22 @@ Mettre en place des jointures pour extraires les données
 ### TP 04 Films  avec clef étrangère
 - Afficher les films avec les catégories
 
+## Jour 2 Après midi
+
 ### TP 05 CRM 
-- Extraire les données avec plusieurs jointures
-- mettre en place un left join 
+- Création des Tables
+
+
+## Jour 3 Après matin
+### TP 05 CRM 
+- mettre en place les left join sur 3 tables  
+- Extraire les données avec plusieurs jointures  
+
+### Les Tables de jointures :
+- Créations d'une table de jointures
+- Mettre enplace une clef primaire sur 2 ID
+- Extraire les données
+###  TP 06 Les films & Acteurs
+- Extraire les données
+###  TP 07 Site E-commerce
+- Extraire les données
