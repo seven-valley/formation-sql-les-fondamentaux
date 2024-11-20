@@ -62,7 +62,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 	('FA006', 'logiciel ERP', 2000, 6, '2023-03-01',null);
 ```
 # Partie 1
-1 - Créer la base de données  en 4 étape  
+##  Créer la base de données  en 4 étape  
   11 - Créer la table client & Ajouter les données de client  
   12 - Créer la table projet & Ajouter les données de projet  
   13 - Créer la table devis & Ajouter les données de devis    
@@ -71,18 +71,18 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 2 - Ajouter les données  
   
 # Partie 2
-1 - Afficher toutes les factures avec le nom des clients
+## 1 - Afficher toutes les factures avec le nom des clients
 ![alt text](image-1.png)    
-2 - Afficher le nombre de factures par client 
+## 2 - Afficher le nombre de factures par client 
  - afficher 0 factures si il n'y a pas de factures  
  ![alt text](image.png)    
-3 - afficher le chiffre d'affaire par client   
+## 3 - afficher le chiffre d'affaire par client   
 ![alt text](image-3.png)  
-4 - afficher le CA total  
+## 4 - afficher le CA total  
 ![alt text](image-4.png)  
-5 - afficher  la somme des factures en attente de paiement 
+## 5 - afficher  la somme des factures en attente de paiement 
 ![alt text](image-5.png)   
-6 - afficher les factures en retard de paiment 30 jours max  
+## 6 - afficher les factures en retard de paiment 30 jours max  
 avec le nombre de jours de retard
 ![alt text](image-6.png)    
 
