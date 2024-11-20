@@ -71,9 +71,9 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 2 - Ajouter les données  
   
 # Partie 2
-## 1 : Afficher toutes les factures avec le nom des clients
+### 1 : Afficher toutes les factures avec le nom des clients
  
-| client | ref | info | total | date | paiement | 
+| ref | client | info | total | date | paiement | 
 |--- |--- |--- |--- |--- |--- |
 |FA001|Mairie de Rennes |site internet partie 1	|1500|2023-09-01|2023-10-01|
 |FA002|Mairie de Rennes |site internet partie 2	|1500|2023-09-20||	
@@ -82,18 +82,44 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 |FA005|Accenture |site ecommerce|5000|2023-03-01| |	
 |FA006|Neo Soft|	logiciel ERP|2000|2023-03-01| |	   
  
--2 - Afficher le nombre de factures par client 
- - afficher 0 factures si il n'y a pas de factures  
- ![alt text](image.png)    
+### 2 : Afficher le nombre de factures par client 
+ afficher 0 factures si il n'y a pas de factures  
+    
+ | client | nb_factures|
+|--- |--- |
+|Mairie de Rennes |2|
+|Neo Soft |2|
+|Sopra |1|
+|Accenture |1 |
+|Neo Soft|1|
 ## 3 - Afficher le chiffre d'affaire par client   
-![alt text](image-3.png)  
+  
+ | client | nb_factures|
+|--- |--- |
+|Mairie de Rennes |3000|
+|Neo Soft |7000|
+|Sopra |3000|
+|Accenture |5000 |
+|Neo Soft| |
 ## 4 - Afficher le CA total  
-![alt text](image-4.png)  
+
+ | ca_total |
+|--- |
+|18000|  
 ## 5 - Afficher  la somme des factures en attente de paiement 
-![alt text](image-5.png)   
-## 6 - Afficher les factures en retard de paiment 30 jours max  
+ | total_factures |
+|--- |
+|13500|      
+## 6 - Afficher les factures en retard de paiment    
+30 jours max
 avec le nombre de jours de retard  
-![alt text](image-6.png)    
+
+ | facture | nb_jour |
+|--- |--- |
+|FA0002 |427|
+|FA0003 |293|
+|FA0005 |630|
+|FA0006 |630|  
 
 # Partie 3 réaliser un modèle relationnel
   **[OPTIONEL]**  
