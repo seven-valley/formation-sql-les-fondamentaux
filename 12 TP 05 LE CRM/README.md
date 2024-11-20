@@ -93,7 +93,8 @@ avec le nombre de jours de retard
 https://dbdiagram.io/
 
 
-# Partie 1 : Etape 11 & 12
+# Partie 1 
+## Etape 11 & 12
 ```sql
 DROP DATABASE IF EXISTS my_crm;
 CREATE DATABASE my_crm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -133,7 +134,8 @@ INSERT INTO projet (nom, client_id) VALUES
 	('Logiciel ERP', 2),
 	('Logiciel gestion de stock',5);
 ```
-# Partie 1 : Etape 13 & 14
+# Partie 1 
+## Etape 13 & 14
 ```sql
 DROP DATABASE IF EXISTS my_crm;
 CREATE DATABASE my_crm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -225,8 +227,9 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 	('FA006', 'logiciel ERP', 2000, 6, '2023-03-01',null);
 ```
 
-# Partie 2 - question 1
-1 - Afficher toutes les factures avec le nom des clients  
+# Partie 2 
+## Question 1 
+ Afficher toutes les factures avec le nom des clients  
  ![alt text](image-1.png) 
 ```sql
 
@@ -243,7 +246,7 @@ INNER JOIN devis ON facture.devis_id =devis.id
 INNER JOIN projet ON devis.projet_id = projet.id
 INNER JOIN client ON projet.client_id =client.id
 ```
--  autre possiblilé
+## autre possiblilé
 ```sql
 USE my_crm;
 SELECT 
@@ -261,10 +264,11 @@ INNER JOIN devis ON projet.id =devis.projet_id
 INNER JOIN facture ON devis.id =facture.devis_id;
 ```
 
-# Partie 2 - question 2
+## Question 2
+2 - Afficher le nombre de factures par client    
+- afficher 0 factures si il n'y a pas de factures   
 ![alt text](image.png)
-2 - Afficher le nombre de factures par client  
-- afficher 0 factures si il n'y a pas de factures 
+
 ```sql
 USE my_crm;
 SELECT 
@@ -291,8 +295,8 @@ RIGHT JOIN projet ON devis.projet_id = projet.id
 RIGHT JOIN client ON projet.client_id =client.id
 GROUP BY(client.id)
 ```
-
-3 - afficher le chiffre d'affaire par client 
+## Question 3
+3 - afficher le chiffre d'affaire par client  
 ![alt text](image-2.png)
 ```mysql
 SELECT client.nom , SUM(facture.total)
@@ -302,12 +306,14 @@ LEFT JOIN devis ON devis.projet_id = projet.id
 LEFT JOIN facture ON facture.devis_id = devis.id
 GROUP BY (client.id);
 ```
-4 - afficher le CA total
+## Question 4
+4 - afficher le CA total  
 ![alt text](image-4.png) 
 ```mysql
 SELECT SUM(total) FROM facture;
 ```
-5 - afficher  la somme des factures en attente de paiement
+## Question 5
+5 - afficher  la somme des factures en attente de paiement  
 ![alt text  ](image-5.png)
 ```mysql
 SELECT SUM(total) FROM facture WHERE date_paiement IS NULL;
@@ -327,8 +333,9 @@ INNER JOIN projet ON devis.projet_id = projet.id
 INNER JOIN client ON projet.client_id =client.id
 WHERE facture.date_paiement IS NULL;
 ```
-6 - afficher les factures en retard de paiment 30 jours max
-avec le nombre de jours de retard
+## Question 6
+6 - afficher les factures en retard de paiment 30 jours max  
+avec le nombre de jours de retard  
 ![alt text](image-6.png)  
 ```mysql
 SELECT reference,DATEDIFF(CURDATE(),date_crea) AS nb_jours
