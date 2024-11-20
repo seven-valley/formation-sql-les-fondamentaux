@@ -2,7 +2,7 @@
 Gestion des devis et factures d'une entreprise
   
 **echelle de Scoville 100 000**  :underage:  
-https://fr.wikipedia.org/wiki/%C3%89chelle_de_Scoville  
+[Échelle de Scoville](https://fr.wikipedia.org/wiki/%C3%89chelle_de_Scoville)  
 3 piments :cactus::cactus::cactus:  
   
 
