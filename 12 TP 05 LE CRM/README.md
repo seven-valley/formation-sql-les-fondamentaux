@@ -71,13 +71,18 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 2 - Ajouter les données  
   
 # Partie 2
-## 1 - Afficher toutes les factures avec le nom des clients
-![alt text](image-1.png) 
-| prenom | nom | age | inscription | statut | type |  
-| - | - | - | - | - | - | - | - |  
-| Brad | PITT | 60 | 01/01/1970 | 1 | non membre |   
+## 1 : Afficher toutes les factures avec le nom des clients
  
-## 2 - Afficher le nombre de factures par client 
+| client | ref | info | total | date | paiement | 
+|--- |--- |--- |--- |--- |--- |
+|FA001|Mairie de Rennes |site internet partie 1	|1500|2023-09-01|2023-10-01|
+|FA002|Mairie de Rennes |site internet partie 2	|1500|2023-09-20||	
+|FA003|Neo Soft |logiciel CRM|5000|2024-02-01||	
+|FA004|Sopra |logiciel devis|3000|2024-03-03|2024-04-03||
+|FA005|Accenture |site ecommerce|5000|2023-03-01| |	
+|FA006|Neo Soft|	logiciel ERP|2000|2023-03-01| |	   
+ 
+-2 - Afficher le nombre de factures par client 
  - afficher 0 factures si il n'y a pas de factures  
  ![alt text](image.png)    
 ## 3 - Afficher le chiffre d'affaire par client   
