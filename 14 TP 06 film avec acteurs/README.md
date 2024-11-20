@@ -10,7 +10,8 @@
 
 1 - Afficher tous les films de Léonardo DI CAPRIO  
 2 - Afficher le nombre de films par acteur
-3 - Afficher le nombre de films par acteur
+3 - Ajouter un film  
+4 - Trouver le film qui n'a pas d'acteur
 
 
 # 1 Afficher tous les films Léonardo
