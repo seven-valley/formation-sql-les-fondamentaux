@@ -14,6 +14,13 @@
 4 - Insérer  les données  
 5 - Afficher les chats avec leur couleur d'yeux  
 6 - Faire le script pour supprimer les table (DROP TABLE)  
+
+7 - Afficher le nombre de chat par couleur d'yeux
+avec **COUNT()** et **GROUP BY()**
+marron : 3
+bleu : 1
+ 
+
 ![alt text](image.webp)
 ## La structure
 ```sql

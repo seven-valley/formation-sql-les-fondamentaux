@@ -100,4 +100,4 @@ FROM (
 	JOIN articles a USING (refart)
 	JOIN grilletarifs g ON (a.codeGam=g.codeGam AND a.codeCate=g.codeCate)
 	JOIN tarifs t USING (codeTarif)
-	GROUP BY noFic) ss;
+	GROUP BY noFic) ;

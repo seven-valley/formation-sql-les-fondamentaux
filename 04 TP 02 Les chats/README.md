@@ -15,8 +15,13 @@
 06 - Afficher les chats qui vive entre 11 et 19 ans  
 07 - Afficher le ou les chats dont le nom contient 'sia'  
 08 - Afficher la moyenne d'age des chats  
-09 - Afficher le nombre de chats dans la table  
-[BONUS] 10 - Ajouter les données à partir d'un fichier excel  
+09 - Afficher le nombre de chats dans la table 
+10 - Afficher le nombre de chat par couleur d'yeux
+avec **COUNT()** et **GROUP BY()**
+marron : 3
+bleu : 1
+  
+[BONUS] 11 - Ajouter les données à partir d'un fichier excel  
 
 # Correction structure de la table
 

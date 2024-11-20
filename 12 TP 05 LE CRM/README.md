@@ -71,10 +71,15 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 2 - Ajouter les données  
   
 # Partie 2
-1 - Afficher toutes les factures avec le nom des clients  
-2 - Afficher le nombre de factures par client - afficher 0 factures si il n'y a pas de factures  
+1 - Afficher toutes les factures avec le nom des clients
+![alt text](image-1.png)    
+2 - Afficher le nombre de factures par client 
+ - afficher 0 factures si il n'y a pas de factures  
+ ![alt text](image.png)    
 3 - afficher le chiffre d'affaire par client   
+![alt text](image-3.png)  
 4 - afficher le CA total  
+![alt text](image-4.png)  
 5 - afficher  la somme des factures en attente de paiement  
 6 - afficher les factures en retard de paiment 30 jours max  
 avec le nombre de jours de retard  
@@ -220,7 +225,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 
 # Partie 2 - question 1
 1 - Afficher toutes les factures avec le nom des clients  
- 
+ ![alt text](image-1.png) 
 ```sql
 
 SELECT 
@@ -255,6 +260,7 @@ INNER JOIN facture ON devis.id =facture.devis_id;
 ```
 
 # Partie 2 - question 2
+![alt text](image.png)
 2 - Afficher le nombre de factures par client  
 - afficher 0 factures si il n'y a pas de factures 
 ```sql
@@ -285,6 +291,7 @@ GROUP BY(client.id)
 ```
 
 3 - afficher le chiffre d'affaire par client 
+![alt text](image-2.png)
 ```mysql
 SELECT client.nom , SUM(facture.total)
 FROM client
