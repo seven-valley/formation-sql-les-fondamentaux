@@ -71,7 +71,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 2 - Ajouter les données  
   
 # Partie 2
-### 1 : Afficher toutes les factures avec le nom des clients
+## 1 : Afficher toutes les factures avec le nom des clients
  
 | ref | client | info | total | date | paiement | 
 |--- |--- |--- |--- |--- |--- |
@@ -82,7 +82,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 |FA005|Accenture |site ecommerce|5000|2023-03-01| |	
 |FA006|Neo Soft|	logiciel ERP|2000|2023-03-01| |	   
  
-### 2 : Afficher le nombre de factures par client 
+## 2 : Afficher le nombre de factures par client 
  afficher 0 factures si il n'y a pas de factures  
     
  | client | nb_factures|
@@ -92,7 +92,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 |Sopra |1|
 |Accenture |1 |
 |Neo Soft|1|
-### 3 - Afficher le chiffre d'affaire par client   
+## 3 - Afficher le chiffre d'affaire par client   
   
  | client | nb_factures|
 |--- |--- |
@@ -101,16 +101,16 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 |Sopra |3000|
 |Accenture |5000 |
 |Neo Soft| |
-### 4 - Afficher le CA total  
+## 4 - Afficher le CA total  
 
  | ca_total |
 |--- |
 |18000|  
-### 5 - Afficher  la somme des factures en attente de paiement 
+## 5 - Afficher  la somme des factures en attente de paiement 
  | total_factures |
 |--- |
 |13500|      
-### 6 - Afficher les factures en retard de paiment    
+## 6 - Afficher les factures en retard de paiment    
 30 jours max
 avec le nombre de jours de retard  
 
