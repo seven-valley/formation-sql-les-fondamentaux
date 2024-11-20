@@ -218,7 +218,7 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 	('FA006', 'logiciel ERP', 2000, 6, '2023-03-01',null);
 ```
 
-# partie 2 - question 1
+# Partie 2 - question 1
 ```sql
 
 SELECT 
