@@ -58,28 +58,28 @@ FROM film
 INNER JOIN film_has_acteur  ON film.id = film_has_acteur.film_id
 INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
 ```
-## Reprendre la base du module 06
+# Reprendre la base du module 06
 
-1 - Afficher tous les films de Léonardo DI CAPRIO 
+## 1 - Afficher tous les films de Léonardo DI CAPRIO 
  | film | acteur_prenom | acteur_nom |
 |--- |--- |--- |
 |Once Upon the time |  Leonardo | DICAPRIO |
 |Fight Club |  Leonardo | DICAPRIO |
 
-2 - Afficher le nombre de films par acteur 
+## 2 - Afficher le nombre de films par acteur 
 | acteur_prenom | acteur_nom |  nb_films | 
 |--- |--- |--- |
 |  Leonardo | DICAPRIO | 1|
 | Brad | PITT | 2 |
 
-3 - Ajouter un film :TITANIC   
-4 - Trouver le film qui n'a pas d'acteur
+## 3 - Ajouter un film :TITANIC   
+## 4 - Trouver le film qui n'a pas d'acteur
 | film | 
 |--- |
 |  TITANIC |
 
 
-# 1 - Afficher tous les films Léonardo
+##  1 - Afficher tous les films Léonardo
 ```mysql
 SELECT 
 film.nom AS film,

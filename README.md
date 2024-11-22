@@ -2,7 +2,7 @@
 
 # Plan de la formation
 
-## JOUR 1
+## JOUR 1 MATIN
 
 ### Creation de data base
 - Créer une base de données  
@@ -15,26 +15,38 @@
 - Créer une contrainte de nullité  
 - Mettre des valeurs par défault  
 
+
+**TP 01 VIP Cockatail**
+Création d'une table personne
+![personne](./img/personne.png)
+
+**TP 02 Le monde des chats**  __optionel__
+Création d'une table chat
+## JOUR 1 APRES MIDI
+
 ### Ajouter des données
 - Ajouter des données avec ou sans clef primaire  
 - Tester les valeurs par défaults  
 - Tester les valeurs null  
 
 ### Lecture des données
-- Prendre en main **as**
-- Utiliser la condition **where**
+- Prendre en main **AS**
+- Utiliser la condition **WHERE**
 - Filtrer avec **LIMIT**
 - Classer avec **ORDER BY**
 
-**TP 01 invitation**
-Création d'une table personne
-  
-![personne](./img/personne.png)
-  
-## JOUR 2
+ **TP 03 VIP Cockatail V2**
+ - Ajouter les données avec **INSERT**
+ - Afficher les données avec **SELECT**
+
+ **TP 04 Le monde des chats V2** __optionel__
+ - Ajouter les données avec **INSERT**
+ - Afficher les données avec **SELECT**
+
+## JOUR 2 MATIN
 
 ### Révision
-TP 02  de Révision chat du JOUR 1
+Finir le TP 04 le monde des chats
 
 ### la clef étrangère
 - Créer une clef étrangère  
@@ -43,25 +55,26 @@ TP 02  de Révision chat du JOUR 1
 ![salade](./img/08/salade.png)
 
 
-
 ### Les Jointures :
 LEFT RIGHT ou INNER JOIN ?
 Mettre en place des jointures pour extraires les données
 
-### TP 03 Chats avec clef étrangère
+### TP 05 le monde des chats V3 avec clef étrangère
 - Afficher les chat avec les couleurs des yeux 
 
-### TP 04 Films  avec clef étrangère
+## Jour 2 APRES MIDI
+### TP 06 Films  avec clef étrangère __optionel__
 - Afficher les films avec les catégories
 
-## Jour 2 Après midi
-
-### TP 05 CRM 
+### TP 07 CRM : Devis & Factures 
+ **Difficulté** (Bucheron cannadien) 
 - Création des Tables
+- mettre en place les left join sur 3 tables  
+- Extraire les données avec plusieurs jointures  
 
+## Jour 3 MATIN
+### TP 07 CRM(suite) : Devis & Factures 
 
-## Jour 3 Après matin
-### TP 05 CRM 
 - mettre en place les left join sur 3 tables  
 - Extraire les données avec plusieurs jointures  
 
@@ -69,7 +82,8 @@ Mettre en place des jointures pour extraires les données
 - Créations d'une table de jointures
 - Mettre enplace une clef primaire sur 2 ID
 - Extraire les données
-###  TP 06 Les films & Acteurs
+###  TP 08 Les films & Acteurs
 - Extraire les données
-###  TP 07 Site E-commerce
+###  TP 09 Site E-commerce __optionel__
+- Insérer les données
 - Extraire les données
