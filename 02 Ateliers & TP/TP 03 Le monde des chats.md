@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS chat(
 :six: - Afficher le ou les chats dont le nom contient 'a'  
 :seven: - Afficher la moyenne d'age des chats avec <code>AVG</code> [doc w3school](https://www.w3schools.com/sql/func_mysql_avg.asp)  
 :eight: - Afficher le nombre de chats dans la table   
-:nine: - Afficher le nombre de chat avec couleur des yeux marron  $\color{red}{\text{[BONUS]}}$    :cactus::cactus:  avec <code>COUNT()</code> et <code>GROUP BY</code> [doc w3 school](https://www.w3schools.com/mysql/mysql_groupby.asp)    
+:nine: - Afficher le nombre de chat avec couleur des yeux marron  
 **10** - Afficher le chat avec la plus petite durée de vie avec <code>LIMIT</code> & <code>ORDER BY</code>     
 **11** - Afficher le chat avec la plus longue durée de vie avec <code>LIMIT</code> & <code>ORDER BY</code>     
 **12** - Afficher le nombre de chat par couleur des yeux    $\color{red}{\text{[BONUS]}}$    :cactus::cactus:  avec <code>COUNT()</code> et <code>GROUP BY</code> [doc w3 school](https://www.w3schools.com/mysql/mysql_groupby.asp)  
