@@ -27,7 +27,7 @@ avec phpMyAdmin
   <br>
  <a href="https://laragon.org/">https://laragon.org/</a>
 
-## workbench
+## Workbench
 
 <br>
 <a href="https://dev.mysql.com/downloads/workbench/">
