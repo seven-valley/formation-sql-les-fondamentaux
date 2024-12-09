@@ -145,3 +145,15 @@ Cette commande affiche :
 | 3 | 
 
 ## LIKE
+```sql
+SELECT 
+id,
+titre,
+sortie
+FROM film 
+WHERE titre LIKE 'st%'
+```
+Cette commande affiche : 
+| id | titre | sortie |
+|---|---|---|
+| 1 | STAR WARS | 1977/05/25 |
