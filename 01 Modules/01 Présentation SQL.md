@@ -27,6 +27,15 @@ avec phpMyAdmin
   <br>
  <a href="https://laragon.org/">https://laragon.org/</a>
 
+## workbench
+
+<br>
+<a href="https://dev.mysql.com/downloads/workbench/">
+  <img src="../img/screen/worbench.png" width="500">
+  </a>
+  <br>
+ <a href="https://dev.mysql.com/downloads/workbench/">Workbench</a>
+
 ## SQL Server & SSMS
 SQL Server & **S**erver **M**anagement **S**tudio (SSMS)
 <br>

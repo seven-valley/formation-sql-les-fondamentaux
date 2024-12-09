@@ -1,4 +1,7 @@
 # Exemple  pour SQL Server de Microsoft
+W3 school
+
+https://www.w3schools.com/sql/sql_create_table.asp
 ```sql
 -- CREATE DATABASE entreprise;
 
