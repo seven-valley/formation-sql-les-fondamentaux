@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS chat(
 **11** - Afficher le chat avec la plus longue durée de vie avec <code>LIMIT</code> & <code>ORDER BY</code>     
 **12** - Afficher le nombre de chat par couleur des yeux    $\color{red}{\text{[BONUS]}}$    :cactus::cactus:  avec <code>COUNT()</code> et <code>GROUP BY</code> [doc w3 school](https://www.w3schools.com/mysql/mysql_groupby.asp)  
 **13** - Ajouter les données à partir d'un fichier excel   $\color{red}{\text{[BONUS]}}$ :cactus::cactus::cactus:   
-- Transformer en le fichier <code>.xls<code> en <code>.csv<code>  
+- Transformer en le fichier <code>.xls</code> en <code>.csv</code>  
 |nom|yeux|age|
 |---|---|---|
 |Sphynx|bleu|15|
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS chat(
 
 
 **13** Ajouter les données à partir d'un fichier excel
-- Transformer en le fichier <code>.xls<code> en <code>.csv<code>  
+- Transformer en le fichier <code>.xls</code> en <code>.csv</code>  
 |nom|yeux|age|
 |---|---|---|
 |Sphynx|bleu|15|
