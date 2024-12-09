@@ -31,7 +31,7 @@ avec phpMyAdmin
 
 <br>
 <a href="https://dev.mysql.com/downloads/workbench/">
-  <img src="../img/screen/worbench.png" width="500">
+  <img src="../img/screen/workbench.png" width="500">
   </a>
   <br>
  <a href="https://dev.mysql.com/downloads/workbench/">Workbench</a>
