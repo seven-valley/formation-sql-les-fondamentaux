@@ -208,7 +208,7 @@ USE le_village;
 
 SELECT
 pays.nom AS pays,
-CONT(ville.id)  AS nb_ville
+COUNT(ville.id)  AS nb_ville
 FROM pays
 LEFT JOIN region ON pays.id = region.pays_id
 LEFT JOIN ville ON region.id = ville.region_id;
