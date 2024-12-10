@@ -182,7 +182,7 @@ _Afficher 0 factures si il n'y a pas de factures_
 |Accenture |5000 |
 |Amazon| |
   
-:four: Afficher le CA total    
+:four: Afficher le CA total  avec <code>SUM()</code>  pour additioner les champs [w3 school SUM()](https://www.w3schools.com/mysql/mysql_count_avg_sum.asp)  
 | ca_total |
 |--- |
 |18000|

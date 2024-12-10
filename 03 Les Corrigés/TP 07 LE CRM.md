@@ -211,7 +211,7 @@ LEFT JOIN facture ON facture.devis_id = devis.id
 GROUP BY (client.id);
 ```
 
-:four: Afficher le CA total  
+:four: Afficher le CA total  avec <code>SUM()</code>  pour additioner les champs  [w3 school SUM()](https://www.w3schools.com/mysql/mysql_count_avg_sum.asp)  
 
 | ca_total |
 |--- |
