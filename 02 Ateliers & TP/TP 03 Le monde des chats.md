@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS chat(
 | 1 | Maine coon | marron | 20 |
 
 
-**12** - Afficher le nombre de chat par couleur des yeux
+**12** - Afficher le nombre de chats par couleur des yeux
 | couleur | nb_chat |
 |---|---|
 | marron | 3 |
