@@ -58,3 +58,26 @@ INSERT INTO film (titre,sortie,categ_id) VALUES
 ('THE MATRIX','1999/06/23',1),
 ('PULP FICTION','1994/10/26',2);
 ```  
+
+:five: Afficher tous les films de Science fiction
+| id | titre | sortie | categorie |
+|---|---|---|---|
+| 1 | STAR WARS | 1977/05/25 | Sciences Fiction |
+| 2 | THE MATRIX | 1999/06/23 | Sciences Fiction |
+
+:six: Afficher Le nombre de films de Science Fiction
+| categorie | nb_film |
+|---|---|
+| Sciences Fiction | 2 |
+
+:seven: Afficher Le nombre de films de Science Fiction
+| categorie | nb_film |
+|---|---|
+| Sciences Fiction | 2 |
+
+:seven: Afficher Le nombre de films par catégorie
+
+| categorie | nb_film |
+|---|---|
+| Sciences Fiction | 2 |
+| Thriller | 1 |
