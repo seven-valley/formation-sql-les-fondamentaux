@@ -62,13 +62,13 @@ INSERT INTO chat (nom,age,couleur_id) VALUES
 ('scottish fold',10,1),
 ('domestique',21,null);
 ```
+
 # Je teste et j'affiche
 ```sql
 USE spa;
 
 SELECT  nom FROM chat; 
 ```
-
 | nom | 
 |---|
 | maine coon |
@@ -89,6 +89,42 @@ SELECT  nom FROM couleur;
 | marron |
 | bleu |
 | vert | 
+-----------------------------------------------
+
+:five: Afficher les chats avec les couleurs des yeux avec <code>INNER JOIN</code>
+| id | nom | yeux | age |
+|---|---|---|---|
+| 1 | Maine coon | marron | 20 |
+| 2 | Siamois | bleu | 15 |
+| 3 | Bengal | marron | 18 |
+| 4 | Scottish Fold | marron | 10 | 
+
+:six: Afficher les chats avec les couleurs des yeux avec le chat domestique avec <code>LEFT JOIN</code>
+| id | nom | yeux | age |
+|---|---|---|---|
+| 1 | Maine coon | marron | 20 |
+| 2 | Siamois | bleu | 15 |
+| 3 | Bengal | marron | 18 |
+| 4 | Scottish Fold | marron | 10 | 
+| 5 | Domestique | null | 21 | 
+
+:seven: Afficher le chat qui n'a pas de couleur des yeux
+| id | nom | yeux | age |
+|---|---|---|---|
+| 5 | Domestique | null | 21 | 
+
+:eight: - Afficher le nombre de chats par couleur des yeux
+| couleur | nb_chat |
+|---|---|
+| marron | 3 |
+| bleu | 1 |
+
+:nine: - Afficher le nombre de chats par couleur des yeux avec la couleur "vert"
+| couleur | nb_chat |
+|---|---|
+| marron | 3 |
+| bleu | 1 |
+| vert | 0 |
 
 # Bonus : pseudo code pour db diagram
 
