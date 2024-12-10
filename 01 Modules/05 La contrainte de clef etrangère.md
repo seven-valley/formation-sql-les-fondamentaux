@@ -30,7 +30,7 @@ Une couleur est posséder par plusieurs fruits <code>One to Many</code>
 
 ## Violation de contrainte
 Je ne peux pas supprimer une couleur  
-Si la clef primaire est utilisé en clef étrangère
+Si la clef primaire est utilisée en clef étrangère
   
 <img src="../img/tp/td5/violation-1.png" width="600"><br>
   
@@ -38,7 +38,7 @@ Si la clef primaire est utilisé en clef étrangère
 ```sql
 DELETE FROM couleur WHERE id=1;
 ```
-$\color{red}{\text{Violation de contrainte de clef étrangère}}$
+:one: $\color{red}{\text{Violation 1 de contrainte de clef étrangère}}$
 --------------------------
 Je ne peux pas insérer une clef étrangère   
 qui n'existe pas en tant que clef primaire  
@@ -48,7 +48,7 @@ qui n'existe pas en tant que clef primaire
 ```sql
 INSERT INTO fruit (nom,couleur_id) VALUES ('banane',4);
 ```
-$\color{red}{\text{Violation de contrainte de clef étrangère}}$
+:two: $\color{red}{\text{Violation 2 de contrainte de clef étrangère}}$
 --------------------------
 Je ne peux pas Supprimer une table dont les clef primaire sont relié à une clef étrangère  
 Je doit supprimer fruit en premier   
@@ -59,7 +59,7 @@ qui n'existe pas en tant que clef primaire
 ```sql
 DROP TABLE couleur;
 ```
-$\color{red}{\text{Violation de contrainte de clef étrangère}}$
+:three: $\color{red}{\text{Violation 3 de contrainte de clef étrangère}}$
 --------------------------
 
 ## Création des tables Version 1 :
