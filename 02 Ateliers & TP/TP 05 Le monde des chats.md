@@ -31,6 +31,7 @@ USE spa;
 CREATE TABLE chat (
  id int NOT NULL AUTO_INCREMENT,
  nom VARCHAR(50) NOT NULL,
+ age INT NOT NULL,
  couleur_id int NULL, # le champ peut etre null
  CONSTRAINT pk_chat PRIMARY KEY (id)
 )ENGINE=INNODB;
@@ -73,3 +74,10 @@ ALTER TABLE chat ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES c
 |---|---|
 | marron | 3 |
 | bleu | 1 |
+
+:nine: - Afficher le nombre de chats par couleur des yeux avec la couleur "vert"
+| couleur | nb_chat |
+|---|---|
+| marron | 3 |
+| bleu | 1 |
+| vert | 0 |

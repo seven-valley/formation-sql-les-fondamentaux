@@ -29,6 +29,7 @@ USE spa;
 CREATE TABLE chat (
  id int NOT NULL AUTO_INCREMENT,
  nom VARCHAR(50) NOT NULL,
+ age INT NOT NULL,
  couleur_id int NULL, # le champ peut etre null
  CONSTRAINT pk_chat PRIMARY KEY (id)
 )ENGINE=INNODB;
@@ -54,12 +55,12 @@ INSERT INTO couleur (nom) VALUES
 ('vert');
 
 # 1 ensuite la table chat
-INSERT INTO chat (nom,couleur_id) VALUES
-('maine coon',1),
-('siamois',2),
-('bengal',1),
-('scottish fold',1),
-('domestique',null);
+INSERT INTO chat (nom,age,couleur_id) VALUES
+('maine coon',20,1),
+('siamois',15,2),
+('bengal',18,1),
+('scottish fold',10,1),
+('domestique',21,null);
 ```
 # Je teste et j'affiche
 ```sql
