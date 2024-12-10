@@ -98,7 +98,18 @@ SELECT  nom FROM couleur;
 | 2 | Siamois | bleu | 15 |
 | 3 | Bengal | marron | 18 |
 | 4 | Scottish Fold | marron | 10 | 
-
+```sql
+USE spa;
+# id	nom	yeux	age
+SELECT
+chat.id AS id,
+chat.nom AS nom,
+couleur.nom AS yeux,
+chat.age AS age
+FROM chat
+INNER JOIN couleur
+ON chat.couleur_id = couleur.id
+```
 :six: Afficher les chats avec les couleurs des yeux avec le chat domestique avec <code>LEFT JOIN</code>
 | id | nom | yeux | age |
 |---|---|---|---|
@@ -106,18 +117,63 @@ SELECT  nom FROM couleur;
 | 2 | Siamois | bleu | 15 |
 | 3 | Bengal | marron | 18 |
 | 4 | Scottish Fold | marron | 10 | 
-| 5 | Domestique | null | 21 | 
+| 5 | Domestique | PAS DE COULEURS | 21 | 
+```sql
+USE spa;
+# id	nom	yeux	age
+SELECT
+chat.id AS id,
+chat.nom AS nom,
+ COALESCE(couleur.nom,'PAS DE COULEUR') AS yeux,
+chat.age AS age
+FROM chat
+LEFT JOIN couleur
+ON chat.couleur_id = couleur.id
+```
 
 :seven: Afficher le chat qui n'a pas de couleur des yeux
-| id | nom | yeux | age |
-|---|---|---|---|
-| 5 | Domestique | null | 21 | 
+| id | nom | age |
+|---|---|---|
+| 5 | Domestique | 21 | 
+```sql
+USE spa;
 
+SELECT
+chat.id AS id,
+chat.nom AS nom,
+chat.age AS age
+FROM chat
+WHERE couleur_id IS NULL;
+```
 :eight: Afficher le nombre de chats par couleur des yeux
 | couleur | nb_chat |
 |---|---|
 | marron | 3 |
 | bleu | 1 |
+```sql
+USE spa;
+
+SELECT
+couleur.nom AS couleur,
+COUNT(chat.id) AS nb_chat
+FROM couleur
+INNER JOIN chat 
+ON couleur.id = chat.couleur_id
+GROUP BY(couleur.id)
+```
+**autre possibilité**
+```sql
+USE spa;
+
+SELECT
+couleur.nom AS couleur,
+COUNT(chat.id) AS nb_chat
+FROM chat
+INNER JOIN couleur
+ON chat.couleur_id = couleur.id
+GROUP BY (couleur.id);
+```
+
 
 :nine: Afficher le nombre de chats par couleur des yeux avec la couleur "vert"
 | couleur | nb_chat |
@@ -125,7 +181,27 @@ SELECT  nom FROM couleur;
 | marron | 3 |
 | bleu | 1 |
 | vert | 0 |
+```sql
+SELECT
+couleur.nom AS couleur,
+COUNT(chat.id) AS nb_chat
+FROM couleur
+LEFT JOIN chat 
+ON couleur.id = chat.couleur_id
+GROUP BY(couleur.id)
+```
+**autre possibilité**
+```sql
+USE spa;
 
+SELECT
+couleur.nom AS couleur,
+COUNT(chat.id) AS nb_chat
+FROM chat
+RIGHT JOIN couleur
+ON chat.couleur_id = couleur.id
+GROUP BY (couleur.id);
+```
 # Bonus : pseudo code pour db diagram
 
 <img src="../img/dbdiagram.svg" width="200">  

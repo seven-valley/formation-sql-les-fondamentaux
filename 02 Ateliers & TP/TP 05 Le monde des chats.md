@@ -62,12 +62,12 @@ ALTER TABLE chat ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES c
 | 2 | Siamois | bleu | 15 |
 | 3 | Bengal | marron | 18 |
 | 4 | Scottish Fold | marron | 10 | 
-| 5 | Domestique | null | 21 | 
+| 5 | Domestique | PAS DE COULEURS | 21 | 
 
 :seven: Afficher le chat qui n'a pas de couleur des yeux
-| id | nom | yeux | age |
-|---|---|---|---|
-| 5 | Domestique | null | 21 | 
+| id | nom | age |
+|---|---|---|
+| 5 | Domestique | 21 | 
 
 :eight: Afficher le nombre de chats par couleur des yeux
 | couleur | nb_chat |
