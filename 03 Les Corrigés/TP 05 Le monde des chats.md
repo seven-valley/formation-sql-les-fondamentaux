@@ -203,7 +203,7 @@ ON chat.couleur_id = couleur.id
 GROUP BY (couleur.id);
 ```
 
-**10** Afficher la moyenne de couleur des yeux attribuer par chat
+**10** Afficher la moyenne de couleur des yeux attribuer par chat cactus::cactus::cactus::cactus:  
 | moyenne_couleur_yeux |
 |---|
 | 1.3333 |

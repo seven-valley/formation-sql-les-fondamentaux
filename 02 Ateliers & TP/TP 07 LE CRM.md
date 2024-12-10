@@ -222,7 +222,7 @@ Avec le nombre de jours de retard
 |Accenture |FA005 |616 |1232 euros|
 |Neo Soft |FA006 |616 |1232 euros|
 
-:nine: Partie la Question :three: Afficher la moyenne de de CA par client
+:nine: A partir de la Question :three: Afficher la moyenne de de CA par client :cactus::cactus::cactus::cactus:   
 | moyenne_ca_client |
 |---|
 | 4500 |
