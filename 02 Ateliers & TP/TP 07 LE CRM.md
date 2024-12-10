@@ -8,7 +8,7 @@ Gestion des devis et factures d'une entreprise
 [Échelle de Scoville](https://fr.wikipedia.org/wiki/%C3%89chelle_de_Scoville)  
 3 piments :cactus::cactus::cactus:  
   
-:three: $\color{red}{\text{Objectif faire la requête :one: et :two: le reste est BONUS}}$
+ $\color{red}{\text{Objectif faire la requête :one: et :two: le reste est BONUS}}$
 ## Modèle relationnel
 <img src="../img/db-svg/08-crm.svg" width="800">
 
