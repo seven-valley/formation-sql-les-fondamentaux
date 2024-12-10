@@ -81,3 +81,9 @@ ALTER TABLE chat ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES c
 | marron | 3 |
 | bleu | 1 |
 | vert | 0 |
+
+
+**10** Afficher la moyenne de couleur des yeux attribuer par chat
+| moyenne_couleur_yeux |
+|---|
+| 1.3333 |

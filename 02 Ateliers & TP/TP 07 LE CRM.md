@@ -222,6 +222,11 @@ Avec le nombre de jours de retard
 |Accenture |FA005 |616 |1232 euros|
 |Neo Soft |FA006 |616 |1232 euros|
 
+:nine: Partie la Question :three: Afficher la moyenne de de CA par client
+| moyenne_ca_client |
+|---|
+| 4500 |
+
 # Partie 3 réaliser un modèle relationnel
   **[OPTIONEL]**  
 :shipit:Réaliser le modèle relationnel sur db diagram  et fournir le prompt  

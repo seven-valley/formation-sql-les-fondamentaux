@@ -202,6 +202,25 @@ RIGHT JOIN couleur
 ON chat.couleur_id = couleur.id
 GROUP BY (couleur.id);
 ```
+
+**10** Afficher la moyenne de couleur des yeux attribuer par chat
+| moyenne_couleur_yeux |
+|---|
+| 1.3333 |
+
+```sql
+USE spa;
+
+SELECT avg(info.nb_chat) as moyenne_couleur_yeux 
+FROM(
+SELECT
+	couleur.nom AS couleur,
+	COUNT(chat.id) AS nb_chat
+	FROM couleur
+	LEFT JOIN chat 
+	ON couleur.id = chat.couleur_id
+	GROUP BY(couleur.id)) as info ;
+  ```
 # Bonus : pseudo code pour db diagram
 
 <img src="../img/dbdiagram.svg" width="200">  
