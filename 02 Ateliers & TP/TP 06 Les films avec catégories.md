@@ -70,11 +70,6 @@ INSERT INTO film (titre,sortie,categ_id) VALUES
 |---|---|
 | Science Fiction | 2 |
 
-:seven: Afficher Le nombre de films de Science Fiction
-| categorie | nb_film |
-|---|---|
-| Science Fiction | 2 |
-
 :seven: Afficher Le nombre de films par catégorie
 
 | categorie | nb_film |
