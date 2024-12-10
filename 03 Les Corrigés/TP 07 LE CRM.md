@@ -321,10 +321,24 @@ INNER JOIN client ON projet.client_id =client.id
 WHERE date_paiement IS NULL
 AND DATEDIFF(NOW(),date_crea)  > 30;
 ```
-:nine: A partir de la Question :three: Afficher la moyenne de de CA par client :cactus::cactus::cactus::cactus:   
+:nine: A partir de la Question :three: Afficher la moyenne de de CA par client :cactus::cactus::cactus::cactus:  
+ 
 | moyenne_ca_client |
 |---|
 | 4500 |
+```sql
+USE my_crm;
+
+SELECT avg(info.ca_par_client) FROM(
+	SELECT client.nom , 
+	 SUM(facture.total) AS ca_par_client
+	FROM client
+	INNER JOIN projet ON projet.client_id = client.id
+	INNER JOIN devis ON devis.projet_id = projet.id
+	INNER JOIN facture ON facture.devis_id = devis.id
+	GROUP BY (client.id)) AS info;
+```
+
 # Partie 3
   **[OPTIONEL]**  
 :shipit:Réaliser le modèle relationnel sur db diagram  et fournir le prompt  
