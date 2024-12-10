@@ -69,13 +69,13 @@ ALTER TABLE chat ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES c
 |---|---|---|---|
 | 5 | Domestique | null | 21 | 
 
-:eight: - Afficher le nombre de chats par couleur des yeux
+:eight: Afficher le nombre de chats par couleur des yeux
 | couleur | nb_chat |
 |---|---|
 | marron | 3 |
 | bleu | 1 |
 
-:nine: - Afficher le nombre de chats par couleur des yeux avec la couleur "vert"
+:nine: Afficher le nombre de chats par couleur des yeux avec la couleur "vert"
 | couleur | nb_chat |
 |---|---|
 | marron | 3 |

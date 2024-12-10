@@ -17,9 +17,8 @@
 # Objectifs :
 :one: Création de la base de données **netflix**  
 :two: Création de la table **film**  
-:three: Création de la table **categ**
-
-
+:three: Création de la table **categ**  
+:four: Insérer  les données  
 ```sql
 
 # 1 Création de la base de données
@@ -48,8 +47,9 @@ ALTER TABLE film ADD CONSTRAINT fk_categ FOREIGN KEY (categ_id) REFERENCES categ
 
 :four: Insérer  les données
 ```sql
+USE netflix;
 INSERT INTO categ (nom) VALUES
-('SF'),
+('Science fiction'),
 ('Thriller');
 
 INSERT INTO film (titre,sortie,categ_id) VALUES
@@ -58,36 +58,25 @@ INSERT INTO film (titre,sortie,categ_id) VALUES
 ('PULP FICTION','1994/10/26',2);
 ```  
 
-# TESTER 
-```sql
-USE netflix;
-SELECT * FROM film;
-```
+:five: Afficher tous les films de Science fiction
+| id | titre | sortie | categorie |
+|---|---|---|---|
+| 1 | STAR WARS | 1977/05/25 | Science Fiction |
+| 2 | THE MATRIX | 1999/06/23 | Science Fiction |
 
-```sql
-USE netflix;
-SELECT * FROM categ;
-```
+:six: Afficher Le nombre de films de Science Fiction
+| categorie | nb_film |
+|---|---|
+| Science Fiction | 2 |
 
-# Bonus : pseudo code pour db diagram
+:seven: Afficher Le nombre de films de Science Fiction
+| categorie | nb_film |
+|---|---|
+| Science Fiction | 2 |
 
-<img src="../img/dbdiagram.svg" width="200">  
+:seven: Afficher Le nombre de films par catégorie
 
-[db Diagram](https://dbdiagram.io/home) 
-**prompt db diagram :**
-  
-```
-Table categ{
-  id int [pk,not null, increment]
-  nom varchar(30) [not null]
-}
-Table "film" {
-  "id" INT [pk, not null, increment]
-  "titre" VARCHAR(255) [not null]
-  "sortie" DATE [not null]
-  categ_id INT [null]
-}
-Ref: "categ"."id" < "film"."categ_id"
-```
-
-
+| categorie | nb_film |
+|---|---|
+| Science Fiction | 2 |
+| Thriller | 1 |

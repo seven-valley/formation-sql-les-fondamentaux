@@ -11,8 +11,8 @@ Prise en main des commandes :
 
 | id | titre | sortie | categorie |
 |---|---|---|---|
-| 1 | STAR WARS | 1977/05/25 | Sciences Fiction |
-| 2 | THE MATRIX | 1999/06/23 | Sciences Fiction |
+| 1 | STAR WARS | 1977/05/25 | Science Fiction |
+| 2 | THE MATRIX | 1999/06/23 | Science Fiction |
 | 3 | PULP FICTION | 1994/10/26 | Thriller |
 
 # Objectifs :
@@ -50,7 +50,7 @@ ALTER TABLE film ADD CONSTRAINT fk_categ FOREIGN KEY (categ_id) REFERENCES categ
 ```sql
 USE netflix;
 INSERT INTO categ (nom) VALUES
-('SF'),
+('Science fiction'),
 ('Thriller');
 
 INSERT INTO film (titre,sortie,categ_id) VALUES
@@ -62,22 +62,22 @@ INSERT INTO film (titre,sortie,categ_id) VALUES
 :five: Afficher tous les films de Science fiction
 | id | titre | sortie | categorie |
 |---|---|---|---|
-| 1 | STAR WARS | 1977/05/25 | Sciences Fiction |
-| 2 | THE MATRIX | 1999/06/23 | Sciences Fiction |
+| 1 | STAR WARS | 1977/05/25 | Science Fiction |
+| 2 | THE MATRIX | 1999/06/23 | Science Fiction |
 
 :six: Afficher Le nombre de films de Science Fiction
 | categorie | nb_film |
 |---|---|
-| Sciences Fiction | 2 |
+| Science Fiction | 2 |
 
 :seven: Afficher Le nombre de films de Science Fiction
 | categorie | nb_film |
 |---|---|
-| Sciences Fiction | 2 |
+| Science Fiction | 2 |
 
 :seven: Afficher Le nombre de films par catégorie
 
 | categorie | nb_film |
 |---|---|
-| Sciences Fiction | 2 |
+| Science Fiction | 2 |
 | Thriller | 1 |
