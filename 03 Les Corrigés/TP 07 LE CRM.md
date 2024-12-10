@@ -253,6 +253,8 @@ WHERE facture.date_paiement IS NULL;
 :six: Afficher les factures en retard de paiment    
 30 jours max  
 Avec le nombre de jours de retard    
+Avec  <code>DATEDIFF()</code>   pour calculer les jours de retard [w3 school DATEDIFF()](https://www.w3schools.com/sql/func_mysql_datediff.asp)  
+et Avec <code>NOW()</code> [w3 school DATEDIFF()](https://www.w3schools.com/sql/func_mysql_datediff.asp)    
 
 | facture | nb_jour |
 |--- |--- |
