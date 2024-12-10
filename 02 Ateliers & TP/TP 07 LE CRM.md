@@ -174,13 +174,13 @@ _Afficher 0 factures si il n'y a pas de factures_
 |Amazon |0|
   
 :three: Afficher le chiffre d'affaire par client     
-| client | nb_factures|
+| client | ca_par_client |
 |--- |--- |
 |Mairie de Rennes |3000|
 |Neo Soft |7000|
 |Sopra |3000|
 |Accenture |5000 |
-|Neo Soft| |
+|Amazon| |
   
 :four: Afficher le CA total    
 | ca_total |

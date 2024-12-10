@@ -180,7 +180,7 @@ GROUP BY(client.nom)
 USE my_crm;
 SELECT 
 client.nom,
-count(facture.id)
+count(facture.id) AS nb_factures
 
 
 FROM facture 
@@ -192,18 +192,18 @@ GROUP BY(client.id)
 
 :three: Afficher le chiffre d'affaire par client   
   
-| client | nb_factures|
+| client | ca_par_client|
 |--- |--- |
 |Mairie de Rennes |3000|
 |Neo Soft |7000|
 |Sopra |3000|
 |Accenture |5000 |
-|Neo Soft| |
+|Amazon| |
 
 ```sql
 USE my_crm;
-
-SELECT client.nom , SUM(facture.total)
+SELECT client.nom , 
+ SUM(facture.total) AS ca_par_client
 FROM client
 LEFT JOIN projet ON projet.client_id = client.id
 LEFT JOIN devis ON devis.projet_id = projet.id
@@ -220,7 +220,9 @@ GROUP BY (client.id);
 ```sql
 USE my_crm;
 
-SELECT SUM(total) FROM facture;
+SELECT 
+ SUM(total) AS ca_total
+FROM facture;
 ```  
 :five: Afficher  la somme des factures en attente de paiement 
 | total_factures |
