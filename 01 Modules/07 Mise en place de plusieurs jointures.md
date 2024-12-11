@@ -242,7 +242,7 @@ INNER JOIN pays ON region.pays_id= pays.id
 
 
 # Bonus : pseudo code pour db diagram
-<img src="../img/dbdiagram.png" width="200">  
+<img src="../img/dbdiagram.svg" width="200">  
 
 [db Diagram](https://dbdiagram.io/home) 
 **prompt db diagram :**

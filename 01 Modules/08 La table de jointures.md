@@ -83,7 +83,7 @@ INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
 |Fight Club |  Brad | PITT |
 
 # Bonus : pseudo code pour db diagram
-<img src="../img/dbdiagram.png" width="200">  
+<img src="../img/dbdiagram.svg" width="200">  
 
 [db Diagram](https://dbdiagram.io/home) 
 **prompt db diagram :**

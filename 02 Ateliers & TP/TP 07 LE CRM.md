@@ -231,7 +231,7 @@ Avec le nombre de jours de retard
   **[OPTIONEL]**  
 :shipit:Réaliser le modèle relationnel sur db diagram  et fournir le prompt  
 [db Diagram](https://dbdiagram.io/home)    
-<img src="../img/dbdiagram.png" width="200">  
+<img src="../img/dbdiagram.svg" width="200">  
 
  
 
