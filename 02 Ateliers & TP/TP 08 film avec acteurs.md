@@ -104,4 +104,12 @@ VALUES
 |  Leonardo | DICAPRIO | 2|
 | Brad | PITT | 2 |
 
-**10** - Effacer les 3 tables avec <code>DROP TABLE</code>  
+
+
+**10** - En moyenne Combien d'acteurs jouent dans 1 film ?
+| acteur_par_film |
+|--- |
+| ??? |
+
+
+**11** - Effacer les 3 tables avec <code>DROP TABLE</code> 
