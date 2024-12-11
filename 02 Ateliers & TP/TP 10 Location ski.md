@@ -102,8 +102,8 @@ INSERT INTO clients (noCli, nom, prenom, adresse, cpo, ville) VALUES
     (2, 'Bernard', 'Barnabé', 'Rue du bar', '1000', 'Bourg en Bresse'),
     (3, 'Dupond', 'Camille', 'Rue Crébillon', '44000', 'Nantes'),
     (4, 'Desmoulin', 'Daniel', 'Rue descendante', '21000', 'Dijon'),
-    (5, 'Ferdinand', 'François', 'Rue de la convention', '44100', 'Nantes'),
-    (6, 'Albert', 'Anatole', 'Rue des accacias', '61000', 'Amiens'),
+     (5, 'Ernest', 'Etienne', 'Rue de l’échaffaud', '42000', 'Saint Étienne'),
+    (6, 'Ferdinand', 'François', 'Rue de la convention', '44100', 'Nantes'),
     (9, 'Dupond', 'Jean', 'Rue des mimosas', '75018', 'Paris'),
     (14, 'Boutaud', 'Sabine', 'Rue des platanes', '75002', 'Paris');
 
