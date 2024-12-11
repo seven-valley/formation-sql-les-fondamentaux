@@ -81,7 +81,7 @@ ALTER TABLE ligne ADD CONSTRAINT fk_commande FOREIGN KEY (commande_id) REFERENCE
 
 -- article
 INSERT INTO article (nom,prix) VALUES
-('PlayStation 5',	400),
+('PlayStation 5',	500),
 ('X box',	350),
 ('Machine à café',	400),
 ('PlayStation 3',	100);
