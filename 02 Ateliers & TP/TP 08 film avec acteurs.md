@@ -109,7 +109,7 @@ VALUES
 **10** - En moyenne Combien d'acteurs jouent dans 1 film ?
 | acteur_par_film |
 |--- |
-| ??? |
+| 1,3333 |
 
 
 **11** - Effacer les 3 tables avec <code>DROP TABLE</code> 

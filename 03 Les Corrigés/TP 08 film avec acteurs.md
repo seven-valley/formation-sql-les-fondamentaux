@@ -78,7 +78,7 @@ acteur.nom
 FROM film
 INNER JOIN film_has_acteur  ON film.id = film_has_acteur.film_id
 INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
-WHERE acteur_id=2
+WHERE acteur_id=1
 ```
 :two: Afficher le nombre de films par acteur
 | acteur_prenom | acteur_nom |  nb_films | 
@@ -136,13 +136,12 @@ INSERT INTO film_has_acteur (film_id,acteur_id) VALUES (3,2);
 USE prime_vdo;
 
 SELECT 
-COUNT(film.id) AS nb_films,
+film.nom AS film,
 acteur.prenom,
 acteur.nom
 FROM film
 INNER JOIN film_has_acteur  ON film.id = film_has_acteur.film_id
 INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
-GROUP BY (acteur.id);
 ```
 
 :seven: Ajouter un acteur TOM CRUISE  
@@ -190,13 +189,37 @@ GROUP BY (acteur.id);
 |--- |--- |--- |
 |  Leonardo | DICAPRIO | 2|
 | Brad | PITT | 2 |
-
+```sql
+USE prime_vdo;
+SELECT 
+acteur.prenom,
+acteur.nom,
+COUNT(film.id) AS nb_films
+FROM acteur
+INNER JOIN film_has_acteur  ON acteur.id = film_has_acteur.acteur_id
+INNER JOIN film ON film.id = film_has_acteur.film_id
+GROUP BY (acteur.id)
+HAVING nb_films >= 2;
+```
 
 **10** - En moyenne Combien d'acteurs jouent dans 1 film ?
 | acteur_par_film |
 |--- |
-| ??? |
+| 1,3333 |
+```sql
+USE prime_vdo;
 
+SELECT AVG(info.nb_films) AS acteurs_par_film
+FROM (
+SELECT 
+acteur.prenom,
+acteur.nom,
+COUNT(film.id) AS nb_films
+FROM acteur
+LEFT JOIN film_has_acteur  ON acteur.id = film_has_acteur.acteur_id
+LEFT JOIN film ON film.id = film_has_acteur.film_id
+GROUP BY (acteur.id)) AS info;
+```
 
 **11** - Effacer les 3 tables avec <code>DROP TABLE</code>  
 ```sql
@@ -204,3 +227,18 @@ DROP TABLE film_has_acteur;
 DROP TABLE film;
 DROP TABLE acteur;
 ```  
+OU bien 
+
+```sql
+USE prime_vdo;
+
+ALTER TABLE film_has_acteur DROP FOREIGN KEY fk_acteur;
+ALTER TABLE film_has_acteur DROP FOREIGN KEY fk_film;
+DROP table acteur;
+DROP table film;
+DROP table film_has_acteur;
+```
+OU bien 
+```sql
+DROP DATABASE prime_vdo;
+```
