@@ -157,3 +157,9 @@ Cette commande affiche :
 | id | titre | sortie |
 |---|---|---|
 | 1 | STAR WARS | 1977/05/25 |
+
+# SUM
+
+# AVG
+
+# COUNT GROUP BY

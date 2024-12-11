@@ -220,6 +220,26 @@ LEFT JOIN film_has_acteur  ON acteur.id = film_has_acteur.acteur_id
 LEFT JOIN film ON film.id = film_has_acteur.film_id
 GROUP BY (acteur.id)) AS info;
 ```
+**Autre possibilé avec création d'un table temporaire**
+```sql
+USE prime_vdo;
+-- CREATE TEMPORARY TABLE IF NOT EXISTS table2 AS (SELECT * FROM table1)
+CREATE TEMPORARY TABLE IF NOT EXISTS temp AS
+(
+  SELECT 
+  acteur.prenom,
+  acteur.nom,
+  COUNT(film.id) AS nb_films
+  FROM acteur 
+  LEFT JOIN film_has_acteur  ON acteur.id = film_has_acteur.acteur_id
+  LEFT JOIN film ON film.id = film_has_acteur.film_id
+  GROUP BY (acteur.id) 
+);
+
+SELECT AVG(nb_films) AS acteurs_par_film
+FROM temp;
+DROP TABLE temp;
+```
 
 **11** - Effacer les 3 tables avec <code>DROP TABLE</code>  
 ```sql
