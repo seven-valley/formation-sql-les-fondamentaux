@@ -68,11 +68,11 @@ SELECT  f.noFic, nom, prenom,
         (DATEDIFF(IFNULL(retour, NOW()+1),depart)+1)*prixJour as montant      
 FROM 
 	fiches f
-	INNER JOIN clients c USING (noCli)
+  INNER JOIN clients c USING (noCli)
   INNER JOIN lignesfic l ON f.noFic = l.noFic
   INNER JOIN articles a ON l.refart=a.refart
-	INNER JOIN grilleTarifs g ON a.codeCate = g.codeCate AND a.codeGam = g.codeGam
-	INNER JOIN tarifs t	ON g.codeTarif = t.codeTarif
+  INNER JOIN grilleTarifs g ON a.codeCate = g.codeCate AND a.codeGam = g.codeGam
+  INNER JOIN tarifs t	ON g.codeTarif = t.codeTarif
 WHERE f.noFic= 1002;
 ```
 :five: Prix journalier moyen de location par gamme
