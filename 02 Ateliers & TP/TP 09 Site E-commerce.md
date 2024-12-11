@@ -86,7 +86,7 @@ INSERT INTO article (nom,prix) VALUES
 ('Machine à café',	400),
 ('PlayStation 3',	100);
 -- client
-INSERT INTO client (nom,prenom) VALUES
+INSERT INTO client (prenom,nom) VALUES
 ('Brad','PITT'),	
 ('George','CLONEY'),
 ('Jean','DUJARDIN');
@@ -112,8 +112,6 @@ INSERT INTO ligne (article_id,commande_id,nombre,prix) VALUES
 
 
 
-# Bonus : pseudo code pour db diagram
+# Bonus : Créer la base de données sur db diagram
 <img src="../img/dbdiagram.svg" width="200">
-  
 [db Diagram](https://dbdiagram.io/home) 
-**prompt db diagram :**

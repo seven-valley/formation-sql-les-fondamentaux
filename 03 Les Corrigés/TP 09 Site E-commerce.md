@@ -62,7 +62,7 @@ INSERT INTO article (nom,prix) VALUES
 ('Machine à café',	400),
 ('PlayStation 3',	100);
 -- client
-INSERT INTO client (nom,prenom) VALUES
+INSERT INTO client (prenom,nom) VALUES
 ('Brad','PITT'),	
 ('George','CLONEY'),
 ('Jean','DUJARDIN');
