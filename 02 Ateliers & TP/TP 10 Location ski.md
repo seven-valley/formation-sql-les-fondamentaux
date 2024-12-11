@@ -307,7 +307,7 @@ Réalisez en priorité les requêtes :one:, :three:, :four:, :six:, :seven:  & :
 |2.375000|
 
 
-**10** Calcul du nombre de fiches de location établies pour les catégories de location Ski alpin, Surf et Patinette
+**10** - Calcul du nombre de fiches de location établies pour les catégories de location Ski alpin, Surf et Patinette
 |catégorie|nombre de location|
 |---|---|
 |Ski alpin|2|

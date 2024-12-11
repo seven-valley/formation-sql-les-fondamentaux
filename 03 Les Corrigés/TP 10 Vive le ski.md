@@ -193,7 +193,7 @@ FROM (
 		GROUP BY noFic) info;
 ```
 
-:ten: Calcul du nombre de fiches de location établies pour les catégories de location Ski alpin, Surf et Patinette
+**10** - Calcul du nombre de fiches de location établies pour les catégories de location Ski alpin, Surf et Patinette
 
 |catégorie|nombre de location|
 |---|---|
@@ -210,7 +210,7 @@ JOIN categories c USING(codeCate)
 WHERE c.Libelle IN ('Ski Alpin','Surf','Patinette')
 GROUP BY c.libelle;
 ```
-**11** Calcul du montant moyen des fiches de location
+**11** - Calcul du montant moyen des fiches de location
 |montant moyen d'une fiche de location|
 |---|
 |131.8750|
