@@ -69,7 +69,7 @@ SELECT  f.noFic, nom, prenom,
 FROM 
 	fiches f
   INNER JOIN clients c USING (noCli)
-  INNER JOIN lignesfic l ON f.noFic = l.noFic
+  INNER JOIN lignesfic l USING (noFic)
   INNER JOIN articles a ON l.refart=a.refart
   INNER JOIN grilleTarifs g ON a.codeCate = g.codeCate AND a.codeGam = g.codeGam
   INNER JOIN tarifs t	ON g.codeTarif = t.codeTarif
@@ -129,7 +129,7 @@ FROM
             GROUP BY l.noFic ) info ON info.noFic = f.noFic;
 ```
 :seven:  Grille des tarifs
-|libelle|libelle|libelle|prixJour|
+|libelle|Gamme|Tarif|prixJour|
 |---|---|---|---|
 |Ski de fond alternatif|Entrée de gamme|Base|10|
 |Ski de fond patineur|Entrée de gamme|Chocolat|15|
