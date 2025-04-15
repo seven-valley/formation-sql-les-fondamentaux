@@ -63,7 +63,9 @@ INSERT INTO film (titre,sortie,categ_id) VALUES
 |---|---|---|---|
 | 1 | STAR WARS | 1977/05/25 | Science Fiction |
 | 2 | THE MATRIX | 1999/06/23 | Science Fiction |
-
+```sql
+SELECT
+```
 :six: Afficher Le nombre de films de Science Fiction
 | categorie | nb_film |
 |---|---|
