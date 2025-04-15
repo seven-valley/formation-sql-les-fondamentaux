@@ -64,17 +64,30 @@ INSERT INTO film (titre,sortie,categ_id) VALUES
 | 1 | STAR WARS | 1977/05/25 | Science Fiction |
 | 2 | THE MATRIX | 1999/06/23 | Science Fiction |
 ```sql
-SELECT
+USE netflix;
+SELECT 
+film.id AS id,
+titre,
+sortie,
+categ.nom AS categorie
+FROM film
+INNER JOIN categ on film.categ_id=categ.id 
+WHERE categ.id = 1
 ```
 :six: Afficher Le nombre de films de Science Fiction
 | categorie | nb_film |
 |---|---|
 | Science Fiction | 2 |
+```sql
+USE netflix;
+SELECT
+categ.nom AS categorie, 
+COUNT(film.id) AS nb_film
+FROM film
+INNER JOIN categ on film.categ_id=categ.id 
+WHERE categ.id = 1
+```
 
-:seven: Afficher Le nombre de films de Science Fiction
-| categorie | nb_film |
-|---|---|
-| Science Fiction | 2 |
 
 :seven: Afficher Le nombre de films par catégorie
 
@@ -82,3 +95,12 @@ SELECT
 |---|---|
 | Science Fiction | 2 |
 | Thriller | 1 |
+```sql
+USE netflix;
+SELECT
+categ.nom AS categorie, 
+COUNT(film.id) AS nb_film
+FROM film
+INNER JOIN categ on film.categ_id=categ.id 
+GROUP BY categ.id
+```
