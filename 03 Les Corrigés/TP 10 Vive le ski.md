@@ -65,7 +65,7 @@ WHERE cpo LIKE '44%';
 USE location_ski;
 SELECT  f.noFic, nom, prenom, 
 		a.refart, designation, depart, retour, prixJour,
-        (DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour as montant      
+        ((DATEDIFF(IFNULL(retour, NOW()),depart))+1)*prixJour as montant      
 FROM 
 	fiches f
   INNER JOIN clients c USING (noCli)
