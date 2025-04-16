@@ -121,6 +121,7 @@ LEFT JOIN film_has_acteur on film.id=film_has_acteur.film_id
 WHERE acteur_id IS NULL
 ```
 :five: Associer Leonardo DICAPRIO dans le film TITANIC
+
 ```sql
 USE prime_vdo;
 INSERT INTO film_has_acteur (film_id,acteur_id) VALUES (3,2);

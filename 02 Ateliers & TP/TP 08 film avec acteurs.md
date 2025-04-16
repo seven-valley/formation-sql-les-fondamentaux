@@ -79,6 +79,7 @@ VALUES
 | film | 
 |--- |
 |  TITANIC |
+
 :five: Associer Leonardo DICAPRIO dans le film TITANIC  
 
 :six: Afficher tous les film avec acteurs avec <code>COUNT ()</code> et <code>BROUP BY</code>
