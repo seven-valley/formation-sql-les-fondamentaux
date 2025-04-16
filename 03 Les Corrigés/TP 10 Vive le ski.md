@@ -65,7 +65,7 @@ WHERE cpo LIKE '44%';
 USE location_ski;
 SELECT  f.noFic, nom, prenom, 
 		a.refart, designation, depart, retour, prixJour,
-        (DATEDIFF(IFNULL(retour, NOW()+1),depart)+1)*prixJour as montant      
+        (DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour as montant      
 FROM 
 	fiches f
   INNER JOIN clients c USING (noCli)
@@ -109,7 +109,7 @@ GROUP BY Gamme;
 USE location_ski;
 SELECT  f.noFic, nom, prenom, 
 	a.refart, designation, depart, retour, prixJour,
-(DATEDIFF(IFNULL(retour, NOW()+1),depart)+1)*prixJour as Montant, Total
+(DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour as Montant, Total
 FROM 
 	fiches f
 	JOIN clients c USING (noCli)
@@ -119,7 +119,7 @@ FROM
 	JOIN tarifs t ON g.codeTarif = t.codeTarif
     JOIN (
 		SELECT  l.noFic,
-		SUM( (DATEDIFF(IFNULL(retour, NOW()+1),depart)+1)*prixJour) as total
+		SUM( (DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour) as total
         FROM 
 			lignesfic l
 			JOIN articles a ON l.refart=a.refart
@@ -218,7 +218,7 @@ GROUP BY c.libelle;
 USE location_ski;
 SELECT avg(MontantParFiche)
 FROM (
-	SELECT noFic, SUM((DATEDIFF(IFNULL(retour, NOW()+1),depart)+1)*prixJour) MontantParfiche
+	SELECT noFic, SUM((DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour) MontantParfiche
 	FROM lignesfic l 
 	JOIN articles a USING (refart)
 	JOIN grilletarifs g ON (a.codeGam=g.codeGam AND a.codeCate=g.codeCate)
