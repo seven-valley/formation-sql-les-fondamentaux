@@ -90,7 +90,7 @@ SELECT
 client.prenom AS prenom,
 client.nom AS nom,
 commande.date_achat as date_achat,
-article.nom AS nom,
+article.nom AS article,
 ligne.prix AS prix,
 ligne.nombre AS nb,
 ligne.prix*ligne.nombre AS total
