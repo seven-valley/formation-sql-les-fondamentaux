@@ -82,7 +82,7 @@ VALUES
 
 :five: Associer Leonardo DICAPRIO dans le film TITANIC  
 
-:six: Afficher tous les film avec acteurs avec <code>COUNT ()</code> et <code>BROUP BY</code>
+:six: Afficher tous les film avec acteurs 
  | film | acteur_prenom | acteur_nom |
 |--- |--- |--- |
 |Once Upon the time |  Leonardo | DICAPRIO |
