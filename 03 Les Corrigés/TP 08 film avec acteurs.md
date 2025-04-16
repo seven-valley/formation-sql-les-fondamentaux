@@ -151,6 +151,7 @@ INSERT INTO acteur (prenom,nom) VALUES ('TOM','CRUISE');
 ```
 
 :eight: Afficher le nombre de films par acteur en incluant TOM CRUISE
+
 | acteur_prenom | acteur_nom |  nb_films | 
 |--- |--- |--- |
 | Brad | PITT | 2 |
