@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS chat(
 :six: - Afficher le ou les chats dont le nom contient 'a'  
 :seven: - Afficher la moyenne d'age des chats  
 :eight: - Afficher le nombre de chats dans la table   
-:nine: - Afficher le nombre de chat avec la couleur des yeux marron 
+:nine: - Afficher le nombre de chat avec la couleur des yeux marron  
 **10** - Afficher le chat avec la plus petite durée de vie avec <code>LIMIT</code> & <code>ORDER BY</code>  
 **11** - Afficher le chat avec la plus longue durée de vie avec <code>LIMIT</code> & <code>ORDER BY</code>    
 **12** - Afficher le nombre de chat par couleur des yeux    $\color{red}{\text{[BONUS]}}$    
