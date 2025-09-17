@@ -42,7 +42,7 @@ CREATE TABLE inv_personne(
 :six: - Afficher le salaire moyen  
 :seven: - Afficher le nombre de personnes  
 :eight: - Afficher les acteurs avec un salaire entre 1 000 000 et 4 000 000 avec <code>BETWEEN</code>  
-:nine: - Proposer une requete avec  <code>UPPER()</code> & <code>LOWER()</code>  
+:nine: - Proposer une requete avec  <code>UPPER()</code> & <code>LOWER()</code>    
 **10** - Afficher les personnes dont le prenom contient 'bra'  
 **11** - Trier par age les membres  
 **12** - Afficher le nombre d'acteurs "membre"   
