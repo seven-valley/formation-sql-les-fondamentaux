@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS chat(
 :two: - Afficher le chat avec l'id :2  
 :three: - Trier les chats par nom et par age  
 :four: - Afficher les chats qui vive entre 11 et 19 ans  
-:five: - Afficher le ou les chats dont le nom contient 'sia'  
+:five: - Afficher le ou les chats dont le nom commence par 'sia'  
 :six: - Afficher le ou les chats dont le nom contient 'a'  
 :seven: - Afficher la moyenne d'age des chats avec <code>AVG</code> [doc w3school](https://www.w3schools.com/sql/func_mysql_avg.asp)  
 :eight: - Afficher le nombre de chats dans la table   
