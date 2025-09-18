@@ -9,11 +9,17 @@ Prise en main des commandes :
 <code>INNER JOIN</code>    
 <code>LEFT JOIN</code> 
 
-| id | titre | sortie | categorie |
+**film**
+| id | titre | sortie | categ_id |
 |---|---|---|---|
-| 1 | STAR WARS | 1977/05/25 | Science Fiction |
-| 2 | THE MATRIX | 1999/06/23 | Science Fiction |
-| 3 | PULP FICTION | 1994/10/26 | Thriller |
+| 1 | STAR WARS | 1977/05/25 | 1 |
+| 2 | THE MATRIX | 1999/06/23 | 1 |
+| 3 | PULP FICTION | 1994/10/26 | 2 |
+**categorie**
+| id | nom | 
+|---|---|
+| 1 |  Science Fiction |
+| 2 |  Thriller |
 
 # Objectifs :
 :one: Création de la base de données **netflix**  
