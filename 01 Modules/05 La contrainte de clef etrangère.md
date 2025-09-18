@@ -157,6 +157,7 @@ VALUES
 ```
 
 ## ON DELETE CASCADE
+<img src="../img/cascade.jpg" width="200">
 
 Par default nous avons :
 ```sql
