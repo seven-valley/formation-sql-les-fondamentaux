@@ -156,6 +156,40 @@ VALUES
 ('cerise',NULL);
 ```
 
+## ON DELETE CASCADE
+
+Par default nous avons :
+```sql
+ALTER TABLE fruit 
+ADD CONSTRAINT fk_couleur 
+FOREIGN KEY fruit(couleur_id)
+REFERENCES couleur(id)
+ ON DELETE RESTRICT;
+```
+
+Par pouvons mettre couleur_id à NULL :
+```sql
+ALTER TABLE fruit 
+ADD CONSTRAINT fk_couleur 
+FOREIGN KEY fruit(couleur_id)
+REFERENCES couleur(id)
+ ON DELETE SET NULL;
+```
+
+
+
+:warning: Nous pouvons supprimer tous les fruits associer à cette couleur
+
+```sql
+ALTER TABLE fruit 
+ADD CONSTRAINT fk_couleur 
+FOREIGN KEY fruit(couleur_id)
+REFERENCES couleur(id)
+ ON DELETE CASCADE;
+```
+
+
+
 
 # Bonus : pseudo code pour db diagram
 <img src="../img/dbdiagram.svg" width="200">  
@@ -174,3 +208,5 @@ Table couleur {
 }
 Ref: "couleur"."id" < "fruit"."couleur_id"
 ```
+
+

@@ -174,3 +174,4 @@ GROUP BY (c.id);
 | rouge | 1 |
 | verte | 1 |
 | bleu | 0 |
+
