@@ -29,7 +29,7 @@ Prise en main des commandes :
 | 3 | Bengal | marron | 18 |
 | 4 | Scottish Fold | marron | 10 | 
 
-:six: Afficher les chats avec les couleurs des yeux avec le chat domestique avec <code>LEFT JOIN</code>
+:six: Afficher les chats avec les couleurs des yeux avec le chat domestique avec <code>LEFT JOIN</code>  
 astuce : https://www.w3schools.com/sql/func_sqlserver_coalesce.asp
 | id | nom | yeux | age |
 |---|---|---|---|
