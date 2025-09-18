@@ -1,9 +1,11 @@
 # TP 10 - Location ski
 <img src="../img/num/ten.webp" width="100">  <img src="../img/tp/tp10/jeanpaul.webp" width="100">
 
+[Imprimer le modèle relationnel](../img/model-ski.pdf)
+
 <img src="../img/db-svg/11-ski.png" width="800">
 
-[Imprimer le modèle relationnel](../img/model-ski.pdf)
+
 
 # Les tables :
 
