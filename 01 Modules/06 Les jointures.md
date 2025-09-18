@@ -150,7 +150,7 @@ GROUP BY (c.id);
 | couleur | couleur  |
 |---|---|
 | rouge | 1 |
-| verte | 1 |
+| vert | 1 |
 
 ----------------------------------------------
 
@@ -172,6 +172,6 @@ GROUP BY (c.id);
 | couleur | couleur  |
 |---|---|
 | rouge | 1 |
-| verte | 1 |
+| vert | 1 |
 | bleu | 0 |
 
