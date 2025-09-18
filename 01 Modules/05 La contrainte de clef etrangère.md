@@ -187,7 +187,7 @@ REFERENCES couleur(id)
 
 :warning: Nous pouvons supprimer tous les fruits associer à cette couleur
 ```sql
-ON DELETE CASCADEL;
+ON DELETE CASCADE;
 ```
 ```sql
 ALTER TABLE fruit 
