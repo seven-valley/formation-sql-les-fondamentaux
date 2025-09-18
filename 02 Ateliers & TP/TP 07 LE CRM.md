@@ -3,6 +3,7 @@ Gestion des devis et factures d'une entreprise
     
 <img src="../img/num/seven.webp" width="100">
 
+[Imprimer le modèle relationnel](../img/model-crm.pdf)
   
 **echelle de Scoville 100 000**  :underage:  
 [Échelle de Scoville](https://fr.wikipedia.org/wiki/%C3%89chelle_de_Scoville)  

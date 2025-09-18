@@ -3,6 +3,8 @@
 
 <img src="../img/db-svg/11-ski.png" width="800">
 
+[Imprimer le modèle relationnel](../img/model-ski.pdf)
+
 # Les tables :
 
 ```sql
