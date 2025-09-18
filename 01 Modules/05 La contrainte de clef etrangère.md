@@ -161,6 +161,9 @@ VALUES
 
 Par default nous avons :
 ```sql
+ON DELETE RESTRICT;
+```
+```sql
 ALTER TABLE fruit 
 ADD CONSTRAINT fk_couleur 
 FOREIGN KEY fruit(couleur_id)
@@ -169,6 +172,9 @@ REFERENCES couleur(id)
 ```
 
 Par pouvons mettre couleur_id à NULL :
+```sql
+ON DELETE SET NULL;
+```
 ```sql
 ALTER TABLE fruit 
 ADD CONSTRAINT fk_couleur 
@@ -180,7 +186,9 @@ REFERENCES couleur(id)
 
 
 :warning: Nous pouvons supprimer tous les fruits associer à cette couleur
-
+```sql
+ON DELETE CASCADEL;
+```
 ```sql
 ALTER TABLE fruit 
 ADD CONSTRAINT fk_couleur 
