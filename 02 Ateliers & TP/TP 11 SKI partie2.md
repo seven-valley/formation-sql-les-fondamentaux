@@ -2,7 +2,8 @@
 # Ajouter des personnes
 
 ```sql
-INSERT INTO Clients (id, nom, prenom, adresse, cp, ville) VALUES
+
+INSERT INTO Clients (noCli, nom, prenom, adresse, cpo, ville) VALUES
 (20, 'Dubosc', 'Frank', '12 avenue des flots bleus', '76140', 'Petit-Quevilly'),
 (21, 'Boon', 'Dany', '22 rue des Ch''tis', '59280', 'Armentières'),
 (22, 'Elmaleh', 'Gad', '45 rue du sentier', '75001', 'Paris'),
