@@ -1,6 +1,7 @@
 :one: Liste de tous les articles et le nombre de fois où ils ont été loués, triés du plus loué à ceux qui n’ont jamais été loués.
   
 :two: Liste des clients qui ne possèdent aucune fiche de location.
+  
 :three: Liste des fiches (noFic, nom, refart, designation) qui possèdent des articles en cours de location depuis au moins 5 jours.
   
 :four: Prix facturé par jour en moyenne pour la location d’une paire de skis.
