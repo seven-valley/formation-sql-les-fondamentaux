@@ -92,11 +92,7 @@ JOIN gammes g USING (codeGam)
 JOIN tarifs t USING (codeTarif)
 GROUP BY Gamme;
 ```
-:five: Prix journalier moyen de location par gamme
-|refart|designation|nombre de locations|
-|---|---|---|
-|F05|Fischer Cruiser|4|
-|F50|Fischer SOSSkating VASA|3|
+
 
 :six: Détail de la fiche n°1002 avec le **total**
 |noFic|nom|prenom|refart|designation|depart|retour|prixJour|Montant|Total|
