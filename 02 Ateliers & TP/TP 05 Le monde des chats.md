@@ -58,7 +58,7 @@ astuce : https://www.w3schools.com/sql/func_sqlserver_coalesce.asp
 | vert | 0 |
 
 
-**10** Afficher la moyenne de couleur des yeux attribuer par chat :cactus::cactus::cactus::cactus:  
+**10** Afficher la moyenne de couleur des yeux attribuer par chat **BONUS** :cactus::cactus::cactus::cactus:  
 | moyenne_couleur_yeux |
 |---|
 | 1.3333 |
