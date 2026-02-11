@@ -113,7 +113,7 @@ CREATE TABLE fruit (
   id INT NOT NULL AUTO_INCREMENT,
   nom VARCHAR(30) NOT NULL,
   couleur_id INT  NULL,
-    CONSTRAINT pk_couleur PRIMARY KEY(id)
+    CONSTRAINT pk_fruit PRIMARY KEY(id)
 )ENGINE=InnoDB;
 
 -- ajout de la contrainte de clef etrangere foreign key
