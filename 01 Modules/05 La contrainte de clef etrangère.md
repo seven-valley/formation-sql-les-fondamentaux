@@ -49,7 +49,7 @@ qui n'existe pas en tant que clef primaire
 ```sql
 INSERT INTO fruit (nom,couleur_id) VALUES ('banane',4);
 ```
-:twree: $\color{red}{\text{Violation 2 de contrainte de clef étrangère}}$
+:three: $\color{red}{\text{Violation 2 de contrainte de clef étrangère}}$
 --------------------------
 Je ne peux pas Supprimer une table dont les clef primaire sont relié à une clef étrangère  
 Je doit supprimer fruit en premier   
