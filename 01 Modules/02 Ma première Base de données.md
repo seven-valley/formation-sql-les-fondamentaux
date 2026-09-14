@@ -51,7 +51,7 @@ USE videotheque;
     
 Il est possible d'effacer sa base :
 ```sql
-DROP DATABASE ma_data_base;
+DROP DATABASE ma_base;
 ```
 Nous pouvons l'effacer **uniquement** si elle existe
 ```sql
