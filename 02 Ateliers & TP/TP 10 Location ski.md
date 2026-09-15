@@ -235,14 +235,14 @@ Réalisez en priorité les requêtes :one:, :three:, :four:, :six:, :seven:  & :
 |9|Dupond|Jean|Rue des mimosas|75018 |Paris| 
 
 :two: Nom et prénom de tous les clients
-|prenom|nom|
+|nom|prenom|
 |---|---|
 |Albert|Anatole|
 |Bernard|Barnab|
 |Dupond|Camille|
 |Desmoulin|Daniel|
 |Ferdinand|François|
-|Albert|Anatole|
+|Ernest|Etienne|
 |Dupond|Jean|
 |Boutaud|Sabine|
 
