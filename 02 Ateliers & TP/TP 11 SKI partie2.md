@@ -78,3 +78,5 @@ INSERT INTO LignesFic VALUES (3,9911,  'P01', DATE_SUB(NOW(), INTERVAL 182 DAY),
 **11**  Calcul de la durée moyenne d'une location d'une paire de skis (en journées entières).
 Informations
 Les résultats attendus sont présentés dans le fichier TP-module8-resultats_attendus
+
+https://github.com/datacharmer/test_db
