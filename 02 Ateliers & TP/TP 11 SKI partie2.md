@@ -79,4 +79,20 @@ INSERT INTO LignesFic VALUES (3,9911,  'P01', DATE_SUB(NOW(), INTERVAL 182 DAY),
 Informations
 Les résultats attendus sont présentés dans le fichier TP-module8-resultats_attendus
 
+<hr>
+<hr>
 https://github.com/datacharmer/test_db
+
+```sql
+SELECT 
+    f.title,
+    COUNT(r.rental_id) AS nombre_locations
+FROM film AS f
+JOIN inventory AS i 
+    ON f.film_id = i.film_id
+JOIN rental AS r 
+    ON i.inventory_id = r.inventory_id
+GROUP BY f.film_id, f.title
+ORDER BY nombre_locations DESC
+LIMIT 5;
+```
