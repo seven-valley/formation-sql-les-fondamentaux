@@ -90,13 +90,11 @@ WHERE acteur_id=1
 USE prime_vdo;
 
 SELECT 
-COUNT(film.id) AS nb_films,
-acteur.prenom,
-acteur.nom
-FROM film
-INNER JOIN film_has_acteur  ON film.id = film_has_acteur.film_id
-INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
-GROUP BY (acteur.id);
+f.nom AS film,
+count(fha.acteur_id) AS nb_acteurs
+FROM  film f
+INNER JOIN film_has_acteur fha ON f.id = fha.film_id
+GROUP BY (f.id)
 ```
 
 :three: Ajouter un film TITANIC
