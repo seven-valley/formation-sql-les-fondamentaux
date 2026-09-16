@@ -100,7 +100,7 @@ INSERT INTO ligne (article_id,commande_id,nombre,prix) VALUES
 
 ```
 :four: Afficher la commande de Brad PITT  
-|prenom|nom|date_achat|nom|prix|nb|total|
+|nom|prenom|date_achat|nom|prix|nb|total|
 |---|---|---|---|---|---|---|
 |PITT|Brad|2024-09-08 10:15:00|X box|350|1|350|
 |PITT|Brad|2024-09-08 10:15:00|Machine à café|300|1|300|
