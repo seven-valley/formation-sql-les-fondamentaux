@@ -105,7 +105,7 @@ GROUP BY Gamme;
 USE location_ski;
 SELECT  f.noFic, nom, prenom, 
 	a.refart, designation, depart, retour, prixJour,
-(DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour as Montant, Total
+(DATEDIFF(IFNULL(retour, NOW()),depart)+1)*prixJour as Montant, total as Total
 FROM 
 	fiches f
 	JOIN clients c USING (noCli)
