@@ -188,7 +188,7 @@ FROM (
 		GROUP BY noFic) info;
 ```
 
-**10** - Calcul du nombre de fiches de location établies pour les catégories de location Ski alpin, Surf et Patinette
+**10** - Calcul du nombre de  lignes fiches de location établies pour les catégories de location Ski alpin, Surf et Patinette
 
 |catégorie|nombre de location|
 |---|---|
