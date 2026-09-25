@@ -81,5 +81,7 @@ Les résultats attendus sont présentés dans le fichier TP-module8-resultats_at
 
 <hr>
 <hr>
-Installer la base salika
+Installer la base sakila
+
+
 https://github.com/datacharmer/test_db
