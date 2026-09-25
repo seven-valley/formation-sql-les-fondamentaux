@@ -83,5 +83,7 @@ Les résultats attendus sont présentés dans le fichier TP-module8-resultats_at
 <hr>
 Installer la base sakila
 
+- Afficher les 5 films les plus loué 
+- Afficher les 5 meilleurs clients
 
 https://github.com/datacharmer/test_db
